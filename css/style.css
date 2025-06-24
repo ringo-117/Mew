@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* CSS Document */
+/* style.css（共通css） */
 
 
 body {
@@ -221,13 +221,17 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 27px;
+    margin: 20px 23px;
   }
 
   .copy {
     font-size: 8px;
     font-weight: 600;
     letter-spacing: 0.08em;
+  }
+
+  .copy span {
+    letter-spacing: 0.15em;
   }
 
   .to-top-box {

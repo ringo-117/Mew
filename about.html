@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mew</title>
+    <title>Mew｜about</title>
 
     <meta http-equiv="Cache-Control" content="no-store"> <!-- キャッシュ無効 -->
 
@@ -15,20 +15,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
 
-    <!-- ヒーロー英文_フォント： Goudy Bookletter 1911 -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Goudy+Bookletter+1911&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
-
     <!-- ファビコン -->
     <link rel="shortcut icon" href="./img/favicon.ico">
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css?v=1.3">
+    <link rel="stylesheet" href="css/about.css">
   </head>
 
   <body>
@@ -78,46 +71,46 @@
     </header>
 
     <main id="top">
-      <section class="sec-top">
-        <figure class="top-img">
-          <img src="img/hero.png" alt="ヒーロー">
+      <section class="about">
+        <figure class="about-img">
+          <img src="img/about.png" alt="ヒーロー">
         </figure>
-        <article class="title-box">
-          <h1>Mew</h1>
-          <p class="sub-title">hair growth salon</p>
-          <p class="title-text">
-            Where gentle care meets innovation.<br>
-            A new hair growth experience.<br>
-            From Korea.
-          </p>
-        </article>
-        <div class="to-about-all">
-          <div class="to-about-box">
-            <a href="#about">
-              <span class="sr-only">aboutへ移動</span>
-              <div class="to-about"></div>
-            </a>
-          </div>
-        </div>
-      </section>
 
-      <section id="about" class="sec-about">
         <article class="sec-title">
-          <h2 class="title">ABOUT</h2>
-          <div class="title-line"></div>
+          <h1 class="title">ABOUT</h1>
           <p class="title-jp">キュライムとは</p>
         </article>
-        <p class="text">
+
+        <p class="about-text short">
           CURAIM(キュライム)は、韓国の最先端美容技術を駆使し<br>
           育毛と美肌ケアを同時に実現する<br>
           革新的なソリューションです。
         </p>
-        <article class="more-box">
-          <a href="about.html">
-            <p class="more">READ MORE</p>
-            <span class="arrow"></span>
-          </a>
-        </article>
+
+        <div class="about-line"></div>
+
+        <p class="about-text long">
+          CURAIMは韓国特許成分GAMMA™の配合で独自開発された<br>
+          韓国特許成分GAMMA™を含むアンプルを使用しています。<br>
+          この成分は、肌の再生や育毛を強力にサポートし、<br>
+          エイジングケアにも高い効果を発揮します。<br>
+          クリニック級の施術効果をサロンで実現<br>
+          CURAIMは、クリニックレベルの施術効果をサロンで<br>
+          提供することを可能にしました。<br>
+          これにより、薄毛、ニキビ、シミ、シワなど、<br>
+          さまざまな肌トラブルや育毛の悩みに対応できます。<br>
+          そして、世界各国での展開と信頼性!!<br>
+          CURAIMはFDA登録済みで、<br>
+          ベトナム、アメリカ、シンガポールなど<br>
+          世界各国で展開されている信頼のブランドです。<br>
+          唯一無二のCURAIMは育毛と美肌ケアを同時に叶える<br>
+          革新的な美容ソリューションとして、多くのサロンさんで<br>
+          今導入されています。
+        </p>
+
+        <figure class="about-img-01">
+          <img src="img/about-01.jpg" alt="ヒーロー">
+        </figure>
       </section>
 
       <section class="sec-system">
@@ -133,80 +126,6 @@
             </article>
           </div>
         </a>
-      </section>
-
-      <section class="sec-menu">
-        <a href="maintenance.html">
-          <div class="sec-bg">
-            <article class="sec-title">
-              <h2 class="title">MENU</h2>
-              <div class="title-line"></div>
-              <p class="title-jp">おすすめのメニューをご紹介</p>
-            </article>
-            <article class="more-box">
-              <span class="arrow"></span>
-            </article>
-          </div>
-        </a>
-      </section>
-
-      <section class="sec-photo">
-        <article class="sec-title">
-          <h2 class="title">PHOTO</h2>
-          <div class="title-line"></div>
-        </article>
-        <!-- スライダーのコンテナ -->
-        <div class="swiper">
-          <!-- 必要に応じたwrapper -->
-          <div class="swiper-wrapper">
-            <!-- スライド -->
-            <div class="swiper-slide"><figure></figure></div>
-            <div class="swiper-slide"><figure></figure></div>
-            <div class="swiper-slide"><figure></figure></div>
-            <div class="swiper-slide"><figure></figure></div>
-            <div class="swiper-slide"><figure></figure></div>
-          </div>
-          <article class="slide-btn">
-            <figure>
-              <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
-            </figure>
-            <div class="swiper-pagination"></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="sec-shop">
-        <article class="sec-title">
-          <h2 class="title">SHOP</h2>
-          <div class="title-line"></div>
-        </article>
-        <article class="info">
-          <dl class="info_box box_01">
-            <dt>店舗名</dt>
-            <dd>Mew（ミュウ）</dd>
-          </dl>
-          <dl class="info_box box_02">
-            <dt>住所</dt>
-            <dd>
-              〒819-0002<br>
-              <span class="address">福岡県福岡市西区姪の浜4-4-3</span><br>
-              <a class="map-link"><span>Google mapを見る</span></a>
-            </dd>
-          </dl>
-          <dl class="info_box box_03">
-            <dt>営業日</dt>
-            <dd>木曜日、土曜日</dd>
-          </dl>
-          <dl class="info_box box_04">
-            <dt>営業時間</dt>
-            <dd>10:00〜19:00</dd>
-          </dl>
-          <dl class="info_box box_05">
-            <dt>駐車場</dt>
-            <dd>専用駐車場1台完備</dd>
-          </dl>
-        </article>
       </section>
 
       <section class="sec-line">
@@ -230,11 +149,8 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

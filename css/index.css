@@ -52,7 +52,7 @@
   .top-img {
     width: 80vw;
     height: 385px;
-    height: 78vh;
+    height: 78svh;
   }
 
   .top-img img {
@@ -73,7 +73,7 @@
   .to-about-all {
     align-content: end;
     margin: 0 auto;
-    height: 78vh;
+    height: 78svh;
   }
 
   .to-about-box a {

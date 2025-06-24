@@ -87,7 +87,7 @@ html {
 
   .btn.active i:nth-of-type(1){
     transform: translateY(8px) rotate(45deg);
-    background-color: #D9D9D9;
+    background-color: #949495;
     width: 25px;
     margin-right: 2.5px;
   }
@@ -98,7 +98,7 @@ html {
 
   .btn.active i:nth-of-type(3){
     transform: translateY(-8px) rotate(-45deg);
-    background-color: #D9D9D9;
+    background-color: #949495;
     width: 25px;
     margin-right: 2.5px;
   }
@@ -123,6 +123,58 @@ html {
     opacity: 1;
     pointer-events: auto;
   }
+
+  .page-link.top {
+    padding: 145px 0 0 50px;
+  }
+  .page-link {
+    padding: 0 0 0 50px;
+  }
+
+  .nav_item {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 27px;
+  }
+
+  .sns-box {
+    display: flex;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 64px;
+  }
+
+  .sns-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sns-icon.tiktok {
+    width: 27px;
+    height: 27px;
+  }
+
+  .sns-box p {
+    margin-right: 10px;
+  }
+  .copy-box p.copy {
+    margin-right: 0px;
+    font-size: 8px;
+    width: 198px;
+    margin: 0 auto;
+  }
+
+  .con-bottom {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 
   /*==============================================================
     　　LINE
@@ -154,6 +206,11 @@ html {
     background-color: #06c755;
     margin: 18px auto;
     border-radius: 10px;
+  }
+
+  .sec-line .sec-bg {
+    height: 100%;
+    align-content: center;
   }
 
 

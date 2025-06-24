@@ -10,9 +10,19 @@ body {
   background-color: #fff;
 }
 
-/* ここからCSSを追加していく */
+html {
+  scroll-behavior: smooth; /* スムーススクロール */
+}
+
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  /*==============================================================
+    　　共通（スマホ）
+  ==============================================================*/
+  #top {
+    scroll-margin-top: 80px;
+  }
 
   /*==============================================================
     　　ヘッダー
@@ -30,9 +40,17 @@ body {
     z-index: 20;
   }
 
+  .header.active {
+    background-color: #EEEDED;
+  }
+
   .logo-box {
     display: flex;
     align-items: center;
+  }
+
+  .logo-box.active {
+    display: none;
   }
 
   .logo-box img {
@@ -93,7 +111,7 @@ body {
     top: 0;
     left: 0;
     z-index: 9;
-    background: #fff;
+    background: #EEEDED;
     transition: .5s;
     opacity: 0;
     overflow: hidden;
@@ -104,299 +122,6 @@ body {
   .container.active{
     opacity: 1;
     pointer-events: auto;
-  }
-
-
-  /*==============================================================
-    　　TOP（ヒーロー）
-  ==============================================================*/
-  .sec-top {
-    margin-top: 80px;
-    position: relative;
-  }
-
-  .sec-top .title-box {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 30px;
-    text-align: center;
-  }
-
-  .sec-top h1 {
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-  }
-
-  .sec-top .title-box .sub-title {
-    font-size: 6px;
-    font-family: "Goudy Bookletter 1911", serif;
-    font-weight: 400;
-    letter-spacing: 0.15em;
-    margin-top: 4px;
-  }
-
-  .sec-top .title-box .title-text {
-    font-size: 6px;
-    font-family: "Goudy Bookletter 1911", serif;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    line-height: 2.4;
-    margin-top: 18px;
-  }
-
-  .top-img {
-    width: 80vw;
-    height: 385px;
-  }
-
-  .top-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-  }
-
-  /*==============================================================
-    　　ABOUT
-  ==============================================================*/
-  .sec-about {
-    margin: 80px 0;
-    text-align: center;
-  }
-
-  .sec-title {
-    text-align: center;
-    font-weight: 600;
-    justify-items: center;
-  }
-
-  .sec-title .title {
-    font-size: 24px;
-    letter-spacing: 0.19em;
-  }
-
-  .sec-title .title-jp {
-    font-size: 10px;
-    font-weight: 600;
-  }
-
-  .sec-title .title-line {
-    width: 14px;
-    height: 1px;
-    background-color: #212121;
-    margin: 12px 0;
-  }
-
-  .sec-about .text {
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 2.5;
-    margin-top: 50px;
-    margin-bottom: 54px;
-  }
-
-  .more-box a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .more-box .more {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-  }
-
-  .arrow {
-    position: relative;
-    display: inline-block;
-    width: 17px;
-    height: 0.5px;
-    border-radius: 9999px;
-    background-color: #000;
-    margin-left: 16px;
-  }
-
-  .arrow::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: 0;
-    width: 4px;
-    height: 0.5px;
-    border-radius: 9999px;
-    background-color: #000;
-    transform: rotate(45deg);
-    transform-origin: calc(100% - 2px) 50%;
-  }
-
-  .arrow::after {
-    content: "";
-    position: absolute;
-    top: -8.7px;
-    left: -9.5px;
-    width: 19px;
-    height: 19px;
-    border: solid 0.5px #000;
-    border-radius: 50%;
-  }
-
-
-  /*==============================================================
-    　　SYSTEM
-  ==============================================================*/
-  .sec-system {
-    background-image: url(../img/system.png);
-    margin: 0 27px 20px;
-    height: 172px;
-    background-size: 102%;
-    background-position: 50% 50%;
-  }
-
-  .sec-system .sec-title {
-    color: #fff;
-  }
-
-  /* ==================== SYSTEM・MENU（共通） ================== */
-  .sec-bg {
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    position: relative;
-  }
-
-  .sec-bg .title-line {
-    background-color: #fff;
-  }
-
-  .sec-bg .arrow {
-    height: 1px;
-    background-color: #fff;
-  }
-
-  .sec-bg .arrow::before {
-    height: 1px;
-    background-color: #fff;
-  }
-
-  .sec-bg .arrow::after {
-    border: solid 1px #fff;
-  }
-
-  .sec-bg .more-box {
-    position: absolute;
-    right: 13px;
-    bottom: 17.5px;
-  }
-
-
-  /*==============================================================
-    　　MENU
-  ==============================================================*/
-  .sec-menu {
-    background-image: url(../img/menu.png);
-    margin: 0 27px;
-    height: 172px;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  .sec-menu .sec-title {
-    color: #ffffff;
-    /* text-shadow: #D9D9D9 2px 0 5px; */
-    text-shadow: #bebebe 0 0 2px;
-  }
-
-  .sec-menu .sec-bg .title-line {
-    box-shadow: 0 0 2px 1px #D9D9D9;
-  }
-
-
-  /*==============================================================
-    　　PHOTO
-  ==============================================================*/
-  .sec-photo {
-    margin-top: 86px;
-  }
-
-  /*==============================================================
-    　　SHOP
-  ==============================================================*/
-  .sec-shop {
-    margin-top: 86px;
-  }
-
-  .sec-shop .sec-title .title-line {
-    margin: 12px 0 40px;
-  }
-
-  .info {
-    display: grid;
-    margin: 0 auto;
-    margin-bottom: 108px;
-    grid-template:
-    "box1 box1" auto
-    "box2 box2" auto
-    "box3 box3" auto
-    "box4 box4" auto
-    "box5 box5" auto
-    / 110px 1fr;
-    row-gap: 16px;
-    width: 281px;
-  }
-
-  .box_01{
-    grid-area: box1;
-    align-items: center;
-  }
-
-  .box_02{
-    grid-area: box2;
-  }
-
-  .box_03{
-    grid-area: box3;
-    align-items: center;
-  }
-
-  .box_04{
-    grid-area: box4;
-    align-items: center;
-  }
-
-  .box_05{
-    grid-area: box5;
-    align-items: center;
-  }
-
-  .info dl{
-    display: flex;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    line-height: 2.5;
-  }
-
-  .info dt{
-    min-width: 110px;
-    font-optical-sizing: auto;
-  }
-
-  .box_02 dd{
-    line-height: 2.5;
-  }
-
-  .map-link {
-    display: block;
-    margin-top: 25px;
-  }
-
-  .map-link span {
-    border-bottom: solid 1px #937218;
   }
 
   /*==============================================================

@@ -23,7 +23,12 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
@@ -62,7 +67,7 @@
               </a>
             </li>
             <li>
-              <P class="copy">&copy; Mew All Rights Reserved.</P>
+              <P class="copy">&copy; Mew2025.com</P>
             </li>
           </ul>
           <div class="cover"></div>
@@ -84,9 +89,17 @@
             From Korea.
           </p>
         </article>
+        <div class="to-about-all">
+          <div class="to-about-box">
+            <a href="#about">
+              <span class="sr-only">aboutへ移動</span>
+              <div class="to-about"></div>
+            </a>
+          </div>
+        </div>
       </section>
 
-      <section class="sec-about">
+      <section id="about" class="sec-about">
         <article class="sec-title">
           <h2 class="title">ABOUT</h2>
           <div class="title-line"></div>
@@ -140,7 +153,25 @@
           <h2 class="title">PHOTO</h2>
           <div class="title-line"></div>
         </article>
-        <div></div>
+        <!-- スライダーのコンテナ -->
+        <div class="swiper">
+          <!-- 必要に応じたwrapper -->
+          <div class="swiper-wrapper">
+            <!-- スライド -->
+            <div class="swiper-slide"><figure></figure></div>
+            <div class="swiper-slide"><figure></figure></div>
+            <div class="swiper-slide"><figure></figure></div>
+            <div class="swiper-slide"><figure></figure></div>
+            <div class="swiper-slide"><figure></figure></div>
+          </div>
+          <article class="slide-btn">
+            <figure>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </figure>
+            <div class="swiper-pagination"></div>
+          </article>
+        </div>
       </section>
 
       <section class="sec-shop">
@@ -197,6 +228,10 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

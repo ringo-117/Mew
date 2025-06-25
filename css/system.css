@@ -81,6 +81,7 @@
     margin-bottom: 72px;
     justify-content: center;
     margin-top: 30px;
+    margin-right: 3.5px;
   }
 
   .flow-num {
@@ -143,7 +144,7 @@
 
   /* ==================== 縦線と丸 ================== */
   .flow-line-box {
-    margin-right: 23px;
+    margin-right: 20px;
     display: flex;
     position: relative;
     margin-top: 5px;
@@ -156,11 +157,11 @@
   }
 
   .flow-circle-all img:nth-of-type(2) {
-    margin-top: 254px;
+    margin-top: 252px;
   }
 
   .flow-circle-all img:nth-of-type(3) {
-    margin-top: 573px;
+    margin-top: 572px;
   }
 
   .flow-line {

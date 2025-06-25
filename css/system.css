@@ -157,16 +157,16 @@
   }
 
   .flow-circle-all img:nth-of-type(2) {
-    margin-top: 252px;
+    margin-top: 251px;
   }
 
   .flow-circle-all img:nth-of-type(3) {
-    margin-top: 572px;
+    margin-top: 570px;
   }
 
   .flow-line {
     width: 1px;
-    height: 860px;
+    height: 855px;
     background-color: #D9D9D9;
     position: absolute;
     top: 7px;

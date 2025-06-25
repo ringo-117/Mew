@@ -23,6 +23,11 @@
     margin-bottom: 9px;
   }
 
+  .sec-title .title-jp {
+    font-size: 10px;
+    letter-spacing: 0.17em;
+  }
+
   .about-line {
     width: 1px;
     height: 20px;
@@ -96,8 +101,7 @@
     color: #fff;
   }
 
-  .sec-title .title-jp {
-    font-size: 10px;
+  .sec-system .sec-title .title-jp {
     letter-spacing: 0.21em;
   }
 

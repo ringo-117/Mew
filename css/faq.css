@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* faq.css */
+
+@media screen and (min-width: 320px) {
+  /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+  　　FAQ
+  ==============================================================*/
+  .faq {
+    margin: 80px 0 70px;
+  }
+  .sec-title {
+    font-weight: 600;
+    text-align: right;
+    margin: 18px 25px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 24px;
+    letter-spacing: 0.42em;
+    margin-right: -10px;
+    margin-bottom: 9px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 10px;
+    letter-spacing: 0.17em;
+  }
+
+  .faq-img {
+    width: 100%;
+    height: 215px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+
+  .faq-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
+
+  /* ==================== タイトル（中央） ================== */
+  .title-02 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 45px;
+  }
+
+  .title-02 .title {
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    margin-left: 8px;
+  }
+
+  .title-02 .title-jp {
+    font-size: 10px;
+    letter-spacing: 0.17em;
+    margin-left: 3px;
+  }
+
+  .title-02 .title-line {
+    width: 14px;
+    height: 1px;
+    background-color: #212121;
+    margin: 12px auto;
+  }
+
+  /*==============================================================
+  　　　FAQ-BOX
+  ==============================================================*/
+
+  .faq-toggle {
+    display: none;
+  }
+
+  .faq-main {
+    position: relative;
+    font-optical-sizing: auto;
+    margin: 0 24px 45px;
+  }
+
+  .faq-box {
+    font-weight: 600;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+    border-top: solid 0.5px #D9D9D9;
+  }
+
+  .faq-box.box-end {
+    border-bottom: solid 0.5px #D9D9D9;
+  }
+
+  .faq-title {
+    display: block;
+    padding: 16px 5px 18px 11px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .faq-box .title_text {
+    letter-spacing: 0.15em;
+    margin-top: 3px;
+  }
+
+  .faq-box .con-text {
+    line-height: 1.6;
+    width: 253px;
+    font-size: 8px;
+    letter-spacing: 0.24em;
+  }
+
+  .text_Q {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .faq-box p span {
+    font-size: 10px;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    line-height: -10;
+  }
+
+  .faq-title::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon-faq-open.svg);
+    width: 9px;
+    height: 9px;
+    transition: all 0.3s;
+    top: 18px;
+    right: 7px;
+  }
+
+  .faq-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .faq-content .faq-A {
+    display: flex;
+    padding: 0 5px 24px 11px;
+  }
+
+  .faq-content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
+  }
+
+  .faq-toggle:checked + .faq-title + .faq-content {
+    max-height: 500px;
+    transition: all 1.5s;
+  }
+
+  .faq-toggle:checked + .faq-title::after {
+    background-image: url(../img/icon-faq-close.svg);
+  }
+
+}
+
+
+

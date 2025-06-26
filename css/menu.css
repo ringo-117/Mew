@@ -62,10 +62,8 @@
   ==============================================================*/
   .main-bg {
     background-color: #EEEDED;
-    /* background-color: #fff; */
     padding: 0 16px;
-    /* height: 100svh; */
-    height: 400px;
+    height: 100svh;
     position: relative;
   }
 
@@ -109,7 +107,7 @@
     　　FAQ
   ==============================================================*/
   .sec-faq {
-    background-image: url(../img/faq.png);
+    background-image: url(../img/faq-sub.png);
     margin: 0 27px 30px;
     height: 172px;
     background-size: 102%;

@@ -190,12 +190,18 @@
     text-align: center;
     margin: 0;
     color: #fff;
+  }
+
+  .sec-menu .sec-title .title {
+    font-size: 26px;
+    letter-spacing: 0.09em;
     text-shadow: #bebebe 0 0 2px;
   }
 
   .sec-title .title-jp {
     font-size: 10px;
     letter-spacing: 0.21em;
+    text-shadow: #bebebe 0 0 2px;
   }
 
   .sec-title .title-line {
@@ -203,6 +209,7 @@
     height: 1px;
     background-color: #fff;
     margin: 12px auto;
+    box-shadow: 0 0 2px 1px #D9D9D9;
   }
 
   .sec-bg {
@@ -211,11 +218,6 @@
     height: 100%;
     align-content: center;
     position: relative;
-  }
-
-  .sec-bg .title-line {
-    background-color: #fff;
-    box-shadow: 0 0 2px 1px #D9D9D9;
   }
 
   .arrow {

@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/* about.css */
+/* system.css */
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-  　　ABOUT
+  　　SYSTEM
   ==============================================================*/
-  .about {
-    margin: 80px 0 100px;
-    /* text-align: center; */
+  .menu {
+    /* margin: 80px 0 70px; */
+    margin: 80px 0 45px;
   }
   .sec-title {
     font-weight: 600;
@@ -28,86 +28,114 @@
     letter-spacing: 0.17em;
   }
 
-  .about-line {
-    width: 1px;
-    height: 20px;
-    background-color: #212121;
-    margin: 28px auto 28px;
+  .menu-line {
+    height: 53px;
   }
 
-  .about-img {
+  .menu-img {
     width: 100%;
     height: 215px;
     padding-right: 25px;
     overflow: hidden;
   }
 
-  .about-img img {
+  .menu-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 38%;
+    object-position: 50% 53%;
   }
 
-  .about-text.short {
+  .menu-text {
     font-size: 11px;
     font-weight: 600;
     text-align: center;
-    line-height: 2.8;
+    line-height: 2.8em;
     margin-top: 50px;
     /* margin-bottom: 54px; */
-  }
-
-  .about-text.long {
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 2.3;
-    width: 300px;
-    margin: 0 auto;
-    margin-bottom: 65px;
-  }
-
-
-
-  /* ==================== 画像-01 ================== */
-  .about-img-01 {
-    width: 100vw;
-    aspect-ratio: 9 / 10;
-    padding: 0 36px;
-  }
-
-  .about-img-01 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
 
 
   /*==============================================================
-    　　SYSTEM
+    　　準備中
   ==============================================================*/
-  .sec-system {
-    background-image: url(../img/system.png);
+  .main-bg {
+    background-color: #EEEDED;
+    /* background-color: #fff; */
+    padding: 0 16px;
+    /* height: 100svh; */
+    height: 400px;
+    position: relative;
+  }
+
+  .coming-soon-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 343px;
+    /* margin-top: 24px; */
+    padding: 72px 24px 72px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+
+  .icon-clock {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+  }
+
+  .coming-soon-box h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    letter-spacing: 0.15em;
+  }
+
+  .coming-soon-box p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .maintenance .sec-line {
+    margin-top: 40px;
+  }
+
+
+  /*==============================================================
+    　　FAQ
+  ==============================================================*/
+  .sec-faq {
+    background-image: url(../img/faq.png);
     margin: 0 27px 30px;
     height: 172px;
     background-size: 102%;
-    background-position: 50% 50%;
+    background-position: 25% 50%;
+
+    margin-top: 70px;
   }
 
-  .sec-system .sec-title {
+  .sec-faq .sec-title {
     text-align: center;
     margin: 0;
     color: #fff;
   }
 
-  .sec-system .sec-title .title {
+  .sec-faq .sec-title .title {
     font-size: 26px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.27em;
+    text-shadow: #bebebe 0 0 2px;
+    margin-left: 6px;
   }
 
-  .sec-system .sec-title .title-jp {
+  .sec-faq .sec-title .title-jp {
+    font-size: 10px;
     letter-spacing: 0.21em;
+    text-shadow: #bebebe 0 0 2px;
+    margin-left: 4px;
   }
 
   .sec-title .title-line {

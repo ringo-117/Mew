@@ -4,10 +4,10 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 10,
   grabCursor: true,
   // 自動再生の設定
-  autoplay: {
-    delay: 3000, // 3秒ごとに切り替え
-    disableOnInteraction: false // ユーザー操作後も止まらない
-  },
+  // autoplay: {
+  //   delay: 3000, // 3秒ごとに切り替え
+  //   disableOnInteraction: false // ユーザー操作後も止まらない
+  // },
 
   // ループさせる（無限ループ）
   loop: true,

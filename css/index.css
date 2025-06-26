@@ -46,8 +46,10 @@
     font-family: "Goudy Bookletter 1911", serif;
     font-weight: 400;
     letter-spacing: 0.08em;
-    line-height: 2.4;
+    /* line-height: 2.4; */
+    line-height: 1.6;
     margin-top: 18px;
+    margin-top: 14px;
   }
 
   .top-img {
@@ -65,8 +67,8 @@
 
   /*==================== aboutへ移動 ====================*/
   .to-about-box {
-    border: solid 0.5px #000000;
-    border-radius: 50%;
+    /* border: solid 0.5px #000000;
+    border-radius: 50%; */
     width: 25px;
     height: 25px;
   }
@@ -89,15 +91,15 @@
   .to-about {
     position: relative;
     display: inline-block;
-    width: 1px;
-    height: 10px;
-    margin: 0 4.1px;
-    border-radius: 9999px;
-    background-color: #000000;
+    /* width: 1px;
+    height: 10px; */
+    /* margin: 0 4.1px; */
+    /* border-radius: 9999px;
+    background-color: #000000; */
     margin-top: 7px;
     margin-left: 11.5px;
   }
-  .to-about::before,
+  /* .to-about::before,
   .to-about::after {
     content: "";
     position: absolute;
@@ -114,7 +116,7 @@
   }
   .to-about::after {
     transform: rotate(-45deg);
-  }
+  } */
 
   /*==============================================================
     　　ABOUT
@@ -149,11 +151,26 @@
     margin: 12px auto;
   }
 
+  .sec-about .text-title {
+    font-size: 11px;
+    font-weight: 600;
+    
+    line-height: 2.8;
+    margin-top: 46px;
+    
+    /* margin-bottom: 16px; */
+    margin-bottom: 12px;
+    /* margin-bottom: 8px; */
+
+    /* font-size: 12px;
+    font-weight: 900; */
+    /* margin-bottom: 18px; */
+  }
+
   .sec-about .text {
     font-size: 11px;
     font-weight: 600;
     line-height: 2.8;
-    margin-top: 46px;
     margin-bottom: 54px;
   }
 
@@ -218,6 +235,7 @@
   .sec-system .sec-title {
     color: #fff;
   }
+
 
   /* ==================== SYSTEM・MENU（共通） ================== */
   .sec-bg {

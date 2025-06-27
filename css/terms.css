@@ -94,7 +94,8 @@
   ul.custom-list li {
     counter-increment: list-counter;
     position: relative;
-    padding-left: 0.5em;
+    /* padding-left: 0.5em; */
+    padding-left: 1em;
     margin-bottom: 0.5em;
   }
 
@@ -106,6 +107,8 @@
     content: "（" counter(list-counter) "）";
     position: absolute;
     left: -25px;
+    width: 40px;
+    text-align: center;
   }
 
   /* .terms-text .text .text-title {

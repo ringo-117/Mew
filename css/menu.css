@@ -154,41 +154,13 @@
   .arrow {
     position: relative;
     display: inline-block;
-    width: 17px;
-    height: 1px;
-    border-radius: 9999px;
-    background-color: #fff;
-    margin-left: 16px;
-  }
-
-  .arrow::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: 0;
-    width: 4px;
-    height: 1px;
-    border-radius: 9999px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    transform-origin: calc(100% - 2px) 50%;
-  }
-
-  .arrow::after {
-    content: "";
-    position: absolute;
-    top: -8.7px;
-    left: -9.5px;
-    width: 19px;
     height: 19px;
-    border: solid 1px #fff;
-    border-radius: 50%;
   }
 
   .sec-bg .more-box {
     position: absolute;
     right: 13px;
-    bottom: 17.5px;
+    bottom: 13px;
   }
 
 }

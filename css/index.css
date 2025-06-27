@@ -23,6 +23,7 @@
     position: absolute;
     /* top: 147px; */
     top: 131px;
+    /* top: 45%; */
     /* transform: translateY(-45%); */
     right: 24px;
     text-align: center;
@@ -163,22 +164,12 @@
   .sec-about .text-title {
     font-size: 11px;
     font-weight: 600;
-    
     line-height: 2.8;
     margin-top: 46px;
-    
     margin-bottom: 16px;
     color: #525252;
     letter-spacing: 0.01em;
-    /* margin-bottom: 12px; */
-    /* margin-bottom: 8px; */
-
-    /* font-size: 12px;
-    font-weight: 900; */
-    /* margin-bottom: 18px; */
-
     margin-left: 3px;
-
   }
 
   .sec-about .text {
@@ -187,9 +178,7 @@
     line-height: 2.8;
     margin-bottom: 54px;
     color: #868686;
-
     margin-left: 3px;
-
   }
 
   .more-box a {
@@ -211,9 +200,8 @@
     display: inline-block;
     /* width: 17px; */
     height: 19px;
-    border-radius: 9999px;
     /* background-color: #000; */
-    margin-left: 14px;
+    /* margin-left: 14px; */
   }
 
   /* .arrow::before {

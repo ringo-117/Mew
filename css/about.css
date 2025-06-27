@@ -7,9 +7,9 @@
   　　ABOUT
   ==============================================================*/
   .about {
-    margin: 80px 0 100px;
-    /* text-align: center; */
+    margin: 80px 0 125px;
   }
+
   .sec-title {
     font-weight: 600;
     text-align: right;
@@ -21,6 +21,7 @@
     letter-spacing: 0.24em;
     margin-right: -6px;
     margin-bottom: 9px;
+    max-width: 100vw;
   }
 
   .sec-title .title-jp {
@@ -49,22 +50,26 @@
     object-position: 50% 38%;
   }
 
-  .about-text.short {
+  .about-top-text .text-title {
+    text-align: center;
     font-size: 11px;
     font-weight: 600;
-    text-align: center;
     line-height: 2.8;
-    margin-top: 50px;
-    /* margin-bottom: 54px; */
+    margin-top: 52px;
+    margin-bottom: 16px;
+    color: #525252;
+    letter-spacing: 0.01em;
+    margin-left: 3px;
   }
 
-  .about-text.long {
+  .about-top-text .text {
+    text-align: center;
     font-size: 11px;
     font-weight: 600;
-    line-height: 2.3;
-    width: 300px;
-    margin: 0 auto;
-    margin-bottom: 65px;
+    line-height: 2.8;
+    margin-bottom: 50px;
+    color: #868686;
+    margin-left: 3px;
   }
 
 
@@ -82,7 +87,64 @@
     object-fit: cover;
   }
 
+ /*==============================================================
+  　　ESSENCE
+  ==============================================================*/
 
+  .about-text.short {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8;
+    margin-top: 50px;
+    /* margin-bottom: 54px; */
+  }
+
+  .about-text.long {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 2.3;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .sec-title.essence {
+    margin: 0;
+    text-align: center;
+    /* margin-left: 5px; */
+  }
+
+  .sec-title.essence .title {
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .sec-title.essence .title-jp {
+    margin-left: 5px;
+  }
+
+  .sec-title.essence .title-line {
+    width: 14px;
+    height: 1px;
+    background-color: #212121;
+    margin: 12px auto 38px;
+  }
+
+  .essence-img {
+    width: 100%;
+    height: 215px;
+    padding-left: 25px;
+    overflow: hidden;
+    margin-top: 47px;
+  }
+
+  .essence-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
 
   /*==============================================================
     　　SYSTEM
@@ -110,7 +172,7 @@
     letter-spacing: 0.21em;
   }
 
-  .sec-title .title-line {
+  .sec-system .sec-title .title-line {
     width: 14px;
     height: 1px;
     background-color: #fff;
@@ -128,14 +190,11 @@
   .arrow {
     position: relative;
     display: inline-block;
-    width: 17px;
-    height: 1px;
-    border-radius: 9999px;
-    background-color: #fff;
-    margin-left: 16px;
+    height: 19px;
+    /* margin-left: 16px; */
   }
 
-  .arrow::before {
+  /* .arrow::before {
     content: "";
     position: absolute;
     top: calc(50% - 2px);
@@ -157,12 +216,12 @@
     height: 19px;
     border: solid 1px #fff;
     border-radius: 50%;
-  }
+  } */
 
   .sec-bg .more-box {
     position: absolute;
     right: 13px;
-    bottom: 17.5px;
+    bottom: 13px;
   }
 
 }

@@ -21,8 +21,8 @@
 
   .sec-top .title-box {
     position: absolute;
-    top: 45%;
-    transform: translateY(-45%);
+    top: 147px;
+    /* transform: translateY(-45%); */
     right: 24px;
     text-align: center;
   }
@@ -54,8 +54,10 @@
 
   .top-img {
     width: 80vw;
-    height: 385px;
-    height: 64svh;
+    /* height: 385px; */
+    /* height: 64svh; */
+    height: 426px;
+    /* height: 385px; */
   }
 
   .top-img img {
@@ -79,7 +81,10 @@
     margin: 0 auto;
     /* margin-top: 100%; */
     /* margin-top: auto; */
-    max-height: 64svh;
+    /* max-height: 64svh; */
+    height: 426px;
+    /* height: 385px; */
+
   }
 
   .to-about-box a {
@@ -136,6 +141,7 @@
   .sec-title .title {
     font-size: 24px;
     letter-spacing: 0.19em;
+    margin-left: 5px;
   }
 
   .sec-title .title-jp {
@@ -158,13 +164,18 @@
     line-height: 2.8;
     margin-top: 46px;
     
-    /* margin-bottom: 16px; */
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    color: #525252;
+    letter-spacing: 0.01em;
+    /* margin-bottom: 12px; */
     /* margin-bottom: 8px; */
 
     /* font-size: 12px;
     font-weight: 900; */
     /* margin-bottom: 18px; */
+
+    margin-left: 3px;
+
   }
 
   .sec-about .text {
@@ -172,12 +183,18 @@
     font-weight: 600;
     line-height: 2.8;
     margin-bottom: 54px;
+    color: #868686;
+
+    margin-left: 3px;
+
   }
 
   .more-box a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 12px;
+
   }
 
   .more-box .more {
@@ -189,14 +206,14 @@
   .arrow {
     position: relative;
     display: inline-block;
-    width: 17px;
-    height: 0.5px;
+    /* width: 17px; */
+    height: 19px;
     border-radius: 9999px;
-    background-color: #000;
-    margin-left: 16px;
+    /* background-color: #000; */
+    margin-left: 14px;
   }
 
-  .arrow::before {
+  /* .arrow::before {
     content: "";
     position: absolute;
     top: calc(50% - 2px);
@@ -218,7 +235,7 @@
     height: 19px;
     border: solid 0.5px #000;
     border-radius: 50%;
-  }
+  } */
 
 
   /*==============================================================
@@ -234,6 +251,7 @@
 
   .sec-system .sec-title {
     color: #fff;
+    margin-top: -4px;
   }
 
 
@@ -250,24 +268,25 @@
     background-color: #fff;
   }
 
-  .sec-bg .arrow {
+  /* .sec-bg .arrow {
     height: 1px;
     background-color: #fff;
-  }
+  } */
 
-  .sec-bg .arrow::before {
+  /* .sec-bg .arrow::before {
     height: 1px;
     background-color: #fff;
   }
 
   .sec-bg .arrow::after {
     border: solid 1px #fff;
-  }
+  } */
 
   .sec-bg .more-box {
     position: absolute;
     right: 13px;
-    bottom: 17.5px;
+    /* bottom: 17.5px; */
+    bottom: 13px;
   }
 
 
@@ -286,6 +305,8 @@
     color: #ffffff;
     /* text-shadow: #D9D9D9 2px 0 5px; */
     text-shadow: #bebebe 0 0 2px;
+    margin-top: -4px;
+
   }
 
   .sec-menu .sec-bg .title-line {
@@ -298,6 +319,10 @@
   ==============================================================*/
   .sec-photo {
     margin-top: 86px;
+  }
+
+  .sec-photo .sec-title .title {
+    margin-left: 3.3px;
   }
 
   .swiper-slide {
@@ -321,11 +346,19 @@
     margin-right: 100px;
   }
 
+  .swiper-pagination-bullet-active {
+    background-color: #525252;
+  }
+
   /*==============================================================
     　　SHOP
   ==============================================================*/
   .sec-shop {
     margin-top: 86px;
+  }
+
+  .sec-shop .sec-title .title {
+    margin-left: 3px;
   }
 
   .sec-shop .sec-title .title-line {

@@ -154,6 +154,11 @@
     letter-spacing: 0.21em;
   }
 
+  .sec-about .sec-title .title-jp {
+    margin-left: 4px;
+  }
+
+
   .sec-title .title-line {
     width: 14px;
     height: 1px;

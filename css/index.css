@@ -21,7 +21,8 @@
 
   .sec-top .title-box {
     position: absolute;
-    top: 147px;
+    /* top: 147px; */
+    top: 131px;
     /* transform: translateY(-45%); */
     right: 24px;
     text-align: center;
@@ -56,8 +57,9 @@
     width: 80vw;
     /* height: 385px; */
     /* height: 64svh; */
-    height: 426px;
-    /* height: 385px; */
+    /* height: 426px; */
+    /* height: 400px; */
+    height: 385px;
   }
 
   .top-img img {
@@ -82,8 +84,9 @@
     /* margin-top: 100%; */
     /* margin-top: auto; */
     /* max-height: 64svh; */
-    height: 426px;
-    /* height: 385px; */
+    /* height: 426px; */
+    /* height: 400px; */
+    height: 385px;
 
   }
 

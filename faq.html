@@ -22,6 +22,65 @@
 
     <meta http-equiv="Cache-Control" content="no-store"> <!-- キャッシュ無効 -->
 
+    <!-- FAQ構造化データ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "初回カウンセリングでは何をしますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "お悩みや生活習慣のヒアリング、今後の施術プランをご提案します。もちろん無理に施術を勧めることはありませんので、お気軽にご相談ください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "完全個室ですか？他のお客様と顔を合わせますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+            "text": "完全個室・予約制となっており、他のお客様と顔を合わせることはほとんどありません。プライバシーを大切にした空間で、安心して施術を受けていただけます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "カラーやパーマと併用しても大丈夫ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+            "text": "基本的には併用可能ですが、施術の順番やタイミングには注意が必要です。事前にご相談いただければ、最適なスケジュールをご提案いたします。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "どんな施術を行うのですか？痛みはありますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+            "text": "主に頭皮洗浄・血行促進・成長因子導入・マッサージなどを組み合わせた施術です。医療行為ではないため、痛みはほとんどなく、リラックスして受けていただける内容です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "何回くらい通えば効果が実感できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+            "text": "早い方で1〜3ヶ月ほどで変化を感じられることが多いですが、髪の毛は成長に時間がかかるため、まずは6ヶ月を目安に継続いただくことをおすすめしています。初回カウンセリングで目安をしっかりお伝えいたします。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AGA治療との違いは何ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+            "text": "AGA治療は主に医薬品を使った治療で、医師の診断が必要です。当サロンは、医療ではなく「育毛サロン」として頭皮のケア・生活改善をサポートします。副作用のリスクを避けたい方にも選ばれています。"
+            }
+          }
+
+        ]
+      }
+    </script>
+
     <!-- フォント： Noto Serif JP -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +95,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/faq.css?v=1.0">
   </head>
 
   <body>
@@ -103,13 +162,13 @@
           <div class="title-line"></div>
           <p class="title-jp">よくある質問</p>
         </article>
-        <div class="accordion img_items offs">
+        <div class="accordion">
           <div class="faq-box">
             <input type="checkbox" id="toggle01" class="faq-toggle">
             <label class="faq-title" for="toggle01">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">初回カウンセリングでは何をしますか？</p>
+                <p class="title-text">初回カウンセリングでは何をしますか？</p>
               </div>
             </label>
             <div class="faq-content">
@@ -125,9 +184,9 @@
           <div class="faq-box">
             <input type="checkbox" id="toggle02" class="faq-toggle">
             <label class="faq-title" for="toggle02">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">完全個室ですか？他のお客様と顔を合わせますか？</p>
+                <p class="title-text">完全個室ですか？他のお客様と顔を合わせますか？</p>
               </div>
             </label>
             <div class="faq-content">
@@ -143,9 +202,9 @@
           <div class="faq-box">
             <input type="checkbox" id="toggle03" class="faq-toggle">
             <label class="faq-title" for="toggle03">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">カラーやパーマと併用しても大丈夫ですか？</p>
+                <p class="title-text">カラーやパーマと併用しても大丈夫ですか？</p>
               </div>
             </label>
             <div class="faq-content">
@@ -161,9 +220,9 @@
           <div class="faq-box">
             <input type="checkbox" id="toggle04" class="faq-toggle">
             <label class="faq-title" for="toggle04">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">どんな施術を行うのですか？痛みはありますか？</p>
+                <p class="title-text">どんな施術を行うのですか？痛みはありますか？</p>
               </div>
             </label>
             <div class="faq-content">
@@ -179,9 +238,9 @@
           <div class="faq-box">
             <input type="checkbox" id="toggle05" class="faq-toggle">
             <label class="faq-title" for="toggle05">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">何回くらい通えば効果が実感できますか？</p>
+                <p class="title-text">何回くらい通えば効果が実感できますか？</p>
               </div>
             </label>
             <div class="faq-content">
@@ -197,9 +256,9 @@
           <div class="faq-box box-end">
             <input type="checkbox" id="toggle06" class="faq-toggle">
             <label class="faq-title" for="toggle06">
-              <div class="text_Q">
+              <div class="text-Q">
                 <P><span>Q.</span></P>
-                <p class="title_text">AGA治療との違いは何ですか？</p>
+                <p class="title-text">AGA治療との違いは何ですか？</p>
               </div>
             </label>
             <div class="faq-content">

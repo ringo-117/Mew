@@ -39,8 +39,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css?v=1.8">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="css/index.css?v=1.9">
   </head>
 
   <body>
@@ -85,6 +85,22 @@
             </div>
           </div>
           <div class="cover"></div>
+        </div>
+      </nav>
+
+      <!-- {{-- TBヘッダー --}} -->
+      <nav class="tb-nav">
+        <div class="header">
+          <a class="logo-box" href="index.html">
+            <img src="img/logo.jpg" alt="Mewロゴ">
+          </a>
+          <ul id="nav_list" class="nav-list">
+            <li class="nav_item"><a href="about.html">ABOUT</a></li>
+            <li class="nav_item"><a href="system.html">SYSTEM</a></li>
+            <li class="nav_item"><a href="menu.html">MENU</a></li>
+            <li class="nav_item"><a href="faq.html">FAQ</a></li>
+            <li class="nav_item"><a href="index.html#line">CONTACT</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -142,39 +158,41 @@
         </article>
       </section>
 
-      <section class="sec-system">
-        <a href="system.html">
-          <div class="sec-bg">
-            <article class="sec-title">
-              <h2 class="title">SYSTEM</h2>
-              <div class="title-line"></div>
-              <p class="title-jp">施術の流れをご紹介</p>
-            </article>
-            <article class="more-box">
-              <!-- <span class="arrow"></span> -->
-              <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
+      <div class="flex">
+        <section class="sec-system">
+          <a href="system.html">
+            <div class="sec-bg">
+              <article class="sec-title">
+                <h2 class="title">SYSTEM</h2>
+                <div class="title-line"></div>
+                <p class="title-jp">施術の流れをご紹介</p>
+              </article>
+              <article class="more-box">
+                <!-- <span class="arrow"></span> -->
+                <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
 
-            </article>
-          </div>
-        </a>
-      </section>
+              </article>
+            </div>
+          </a>
+        </section>
 
-      <section class="sec-menu">
-        <a href="menu.html">
-          <div class="sec-bg">
-            <article class="sec-title">
-              <h2 class="title">MENU</h2>
-              <div class="title-line"></div>
-              <p class="title-jp">オススメのメニューをご紹介</p>
-            </article>
-            <article class="more-box">
-              <!-- <span class="arrow"></span> -->
-              <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
+        <section class="sec-menu">
+          <a href="menu.html">
+            <div class="sec-bg">
+              <article class="sec-title">
+                <h2 class="title">MENU</h2>
+                <div class="title-line"></div>
+                <p class="title-jp">オススメのメニューをご紹介</p>
+              </article>
+              <article class="more-box">
+                <!-- <span class="arrow"></span> -->
+                <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
 
-            </article>
-          </div>
-        </a>
-      </section>
+              </article>
+            </div>
+          </a>
+        </section>
+      </div>
 
       <section class="sec-photo">
         <article class="sec-title">
@@ -235,7 +253,7 @@
         </article>
       </section>
 
-      <section class="sec-line">
+      <section id="line" class="sec-line">
         <div class="sec-bg">
           <p>ご予約の方は、LINEからご連絡ください。</p>
             <figure class="line-box">
@@ -247,7 +265,18 @@
     </main>
 
     <footer class="footer">
-      <P class="copy">&copy; <span>Mew</span></P>
+      <div class="footer-item">
+        <img class="footer-img sp-none" src="img/footer-logo.png" alt="Mewロゴ">
+
+        <article class="footer-text-box">
+          <P class="footer-text sp-none">
+            Where gentle care meets innovation.<br>
+            A new hair growth experience.<br>
+            From Korea.
+          </P>
+          <P class="copy">&copy; <span>Mew</span></P>
+        </article>
+      </div>
       <div class="to-top-box">
         <a href="#top">
           <img src="img/icon-top.svg" alt="上矢印アイコン">

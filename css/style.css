@@ -24,7 +24,8 @@ html {
     scroll-margin-top: 80px;
   }
 
-  .tb-nav {
+  .tb-nav,
+  .tb-br {
     display: none;
   }
 
@@ -277,7 +278,8 @@ html {
     display: none;
   }
 
-  .tb-nav {
+  .tb-nav,
+  .tb-br {
     display: block;
   }
 

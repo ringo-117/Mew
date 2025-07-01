@@ -3,6 +3,12 @@
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-pc,
+  .tb-img {
+    display: none;
+  }
+
   /*==============================================================
   　　SYSTEM
   ==============================================================*/
@@ -49,19 +55,18 @@
     font-size: 11px;
     font-weight: 600;
     text-align: center;
-    line-height: 2.8em;
+    line-height: 2.8;
     margin-top: 50px;
     /* margin-bottom: 54px; */
   }
 
   /* ==================== 曲線 ================== */
-  .wrap {
+  /* .wrap {
     overflow: hidden;
     height: 50px;
   }
 
   .system-line {
-    /* background: #1CB4D3; */
     border-top: solid 1px #212121;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
@@ -71,6 +76,16 @@
     padding-left: 100px;
     padding-right: 100px;
     opacity: 0.7;
+  } */
+
+  .wrap-line-all {
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  .wrap-line {
+    max-width: 110vw;
+    margin-left: -5vw;
   }
 
   /*==============================================================
@@ -174,7 +189,6 @@
     z-index: -1;
   }
 
-
   /*==============================================================
     　　MENU
   ==============================================================*/
@@ -234,3 +248,219 @@
 
 }
 
+
+@media screen and (min-width: 601px) {
+  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-sp,
+  .sp-img {
+    display: none;
+  }
+
+  .tb-img {
+    display: block;
+  }
+  /*==============================================================
+    　　TB_SYSTEM
+  ==============================================================*/
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+
+  .wrap-pc {
+    display: block;
+  }
+
+  /*==============================================================
+    　　PC_SYSTEM
+  ==============================================================*/
+  .system {
+    margin: 180px 0 75px;
+  }
+
+  .sec-title {
+    margin: 32px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.16em;
+  }
+
+  .system-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+  .system-text {
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 70px;
+    letter-spacing: 0.03em;
+  }
+
+  .system-text span {
+    letter-spacing: 0.14em;
+  }
+
+  /* ==================== 曲線 ================== */
+  /* .wrap-line-all {
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  .wrap-line {
+    max-width: 106vw;
+    margin-left: -3vw;
+  } */
+
+  /*==============================================================
+    　　PC_flow
+  ==============================================================*/
+  .flow{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .flow-box {
+    width: 1000px;
+  }
+
+  .flow-01,
+  .flow-03 {
+    margin-left: 600px;
+  }
+
+  .flow-02 {
+    max-width: 393px;
+    text-align: right;
+  }
+
+  .flow-num {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .flow-title {
+    font-size: 20px;
+  }
+
+  .flow-03 .flow-title {
+    line-height: 2;
+  }
+
+  .flow-text {
+    font-size: 15px;
+    letter-spacing: 0.09em;
+    margin-top: 34px;
+  }
+
+  .flow-01 .item-end {
+    margin-top: 45px;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+  }
+
+  .flow-text.long {
+    line-height: 2.5em;
+    letter-spacing: -0.1em;
+    text-align: left;
+    min-width: 330px;
+    margin-top: 40px;
+  }
+
+  .flow-02 .flow-text.long {
+    margin-bottom: 0;
+  }
+
+  .flow-img {
+    width: 295px;
+    height: 190px;
+    margin-top: 55px;
+  }
+
+  .flow-02 .flow-img {
+    margin-left: auto;
+  }
+
+  .flow-03 .flow-img {
+    margin-top: 55px;
+  }
+
+
+  /* ==================== 縦線と丸 ================== */
+  .flow-line-box {
+    position: absolute;
+    top: 0;
+    left: 483px;
+    margin-right: 0;
+  }
+
+  .flow-circle-all img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .flow-circle-all img:nth-of-type(2) {
+    margin-top: 217px;
+  }
+
+  .flow-circle-all img:nth-of-type(3) {
+    margin-top: 553px;
+  }
+
+  .flow-line {
+    height: 840px;
+    left: 14px;
+  }
+
+  /*==============================================================
+    　　PC_MENU
+  ==============================================================*/
+  .sec-menu {
+    height: 220px;
+    max-width: 845px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .sec-menu .sec-title {
+    margin-bottom: 5px;
+  }
+
+  .sec-menu .sec-title .title {
+    font-size: 36px;
+    letter-spacing: 0.17em;
+  }
+
+  .sec-menu .sec-title .title-jp {
+    font-size: 13px;
+    letter-spacing: 0.21em;
+  }
+
+  .sec-menu .sec-title .title-line {
+    width: 25px;
+    margin: 30px auto;
+  }
+
+  .arrow {
+    height: 36px;
+  }
+
+  .sec-bg .more-box {
+    right: 27px;
+    bottom: 21px;
+  }
+
+}

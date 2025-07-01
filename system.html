@@ -35,8 +35,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/system.css?v=1.2">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/system.css?v=1.3">
   </head>
 
   <body>
@@ -83,6 +83,22 @@
           <div class="cover"></div>
         </div>
       </nav>
+
+      <!-- {{-- TBヘッダー --}} -->
+      <nav class="tb-nav">
+        <div class="header">
+          <a class="logo-box" href="index.html">
+            <img src="img/logo.jpg" alt="Mewロゴ">
+          </a>
+          <ul id="nav_list" class="nav-list">
+            <li class="nav_item"><a href="about.html">ABOUT</a></li>
+            <li class="nav_item"><a href="system.html">SYSTEM</a></li>
+            <li class="nav_item"><a href="menu.html">MENU</a></li>
+            <li class="nav_item"><a href="faq.html">FAQ</a></li>
+            <li class="nav_item"><a href="index.html#line">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main id="top">
@@ -99,14 +115,19 @@
         <p class="system-text">
           「髪が育つ土台づくり」からはじまります。<br>
           施術前にしっかりとカウンセリングを行っております。<br>
-          以下は、当店での基本的な施術の流れです。
+          <span>以下は、当店での基本的な施術の流れです。</span>
         </p>
       </section>
 
       <!-- 曲線 -->
-      <div class="wrap">
+      <!-- <div class="wrap">
         <div class="system-line"></div>
-      </div>
+      </div> -->
+      <figure class="wrap-line-all">
+        <img class="wrap-line wrap-sp" src="img/wrap-line_sp.webp" alt="曲線">
+        <img class="wrap-line wrap-pc" src="img/wrap-line_pc.webp" alt="曲線">
+      </figure>
+
 
       <section class="flow">
         <!-- <div> -->
@@ -119,7 +140,7 @@
             </figure>
           </article>
 
-          <div>
+          <div class="flow-box">
             <article class="flow-01 flow-item">
               <P class="flow-num">01</P>
               <p class="flow-title">ご予約</p>
@@ -134,7 +155,7 @@
                 <img src="img/system-flow-02.png" alt="カウンセリング">
               </figure>
               <p class="flow-text item-end long">
-                まず、カウンセリングシートにご記入いただき、頭皮の状態や<br>
+                まず、カウンセリングシートにご記入いただき、<br class="tb-br">頭皮の状態や<br class="sp-br">
                 気になる事、困り事などを丁寧に聞いていきます。<br>
                 初めての事は、誰でも緊張すると思います。<br>
                 できるだけリラックスして受けていただけるように、私たちも<br>
@@ -146,12 +167,13 @@
               <P class="flow-num">03</P>
               <p class="flow-title">ご希望のメニューに<br>合わせた施術</p>
               <figure class="flow-img">
-                <img src="img/system-flow-03.png" alt="メニュー">
+                <img class="sp-img" src="img/system-flow-03.png" alt="メニュー">
+                <img class="tb-img" src="img/system-flow-03_tb.png" alt="メニュー">
               </figure>
               <p class="flow-text long">
-                当店では、ストレスをできるだけ少なくする為、落ち着いた空間と<br>
-                丁寧なカウンセリングを大切にしております。<br>
-                お客様の髪と頭皮の状態に合わせて、無理のない施術プランを<br>
+                当店では、ストレスをできるだけ少なくする為、<br class="tb-br">落ち着いた空間と<br class="sp-br">
+                丁寧なカウンセリングを大切にして<br class="tb-br">おります。<br>
+                お客様の髪と頭皮の状態に合わせて、無理のない<br class="tb-br">施術プランを<br class="sp-br">
                 ご提案いたします。<br>
                 又、日常のケアアドバイスも丁寧に行っております。<br>
               </p>
@@ -187,7 +209,18 @@
     </main>
 
     <footer class="footer">
-      <P class="copy">&copy; <span>Mew</span></P>
+      <div class="footer-item">
+        <img class="footer-img sp-none" src="img/footer-logo.png" alt="Mewロゴ">
+
+        <article class="footer-text-box">
+          <P class="footer-text sp-none">
+            Where gentle care meets innovation.<br>
+            A new hair growth experience.<br>
+            From Korea.
+          </P>
+          <P class="copy">&copy; <span>Mew</span></P>
+        </article>
+      </div>
       <div class="to-top-box">
         <a href="#top">
           <img src="img/icon-top.svg" alt="上矢印アイコン">

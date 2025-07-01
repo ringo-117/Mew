@@ -283,10 +283,11 @@
   .about-text.long {
     font-size: 15px;
     line-height: 2.5;
-    width: 845px;
+    width: 847.5px;
     margin: 0 auto;
     margin-bottom: 32px;
     letter-spacing: 0.2em;
+    padding-left: 2.5px;
   }
 
   .about-line {
@@ -297,7 +298,6 @@
   .sec-title.essence .title-jp {
     font-size: 17px;
   }
-
 
   .about-text.long .text-item {
     height: 35px;

@@ -4,7 +4,7 @@
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-  　　SYSTEM
+  　　MENU
   ==============================================================*/
   .menu {
     margin: 80px 0 70px;
@@ -163,5 +163,152 @@
     bottom: 13px;
   }
 
+}
+
+
+@media screen and (min-width: 601px) {
+  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_MENU
+  ==============================================================*/
+
+  /*==============================================================
+    　　TB_準備中画面
+  ==============================================================*/
+  .coming-soon-box {
+    width: 663px;
+    padding: 80px 24px 80px;
+    margin-top: 16px;
+  }
+
+  .icon-clock {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 28px;
+  }
+
+  .coming-soon-box h1 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    letter-spacing: 0.18em;
+  }
+
+  .coming-soon-box p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+
+  /*==============================================================
+    　　PC_MENU
+  ==============================================================*/
+  .menu {
+    margin: 180px 0 75px;
+  }
+
+  .sec-title {
+    margin: 32px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.16em;
+  }
+
+  .menu-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+  .menu-text {
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 70px;
+    letter-spacing: 0.03em;
+  }
+
+  .menu-text span {
+    letter-spacing: 0.14em;
+  }
+
+  /*==============================================================
+  　　PC_準備中画面
+  ==============================================================*/
+  .main-bg {
+    height: 90vh;
+  }
+
+  .coming-soon-box {
+    width: 800px;
+    padding: 92px 24px 96px;
+    margin-top: 40px;
+  }
+
+  .icon-clock {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 32px;
+  }
+
+  .coming-soon-box h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    letter-spacing: 0.2em;
+  }
+
+  .coming-soon-box p {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  /*==============================================================
+    　　PC_FAQ
+  ==============================================================*/
+  .sec-faq {
+    height: 220px;
+    max-width: 845px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .sec-faq .sec-title {
+    margin-bottom: 5px;
+  }
+
+  .sec-faq .sec-title .title {
+    font-size: 36px;
+    letter-spacing: 0.17em;
+  }
+
+  .sec-faq .sec-title .title-jp {
+    font-size: 13px;
+    letter-spacing: 0.21em;
+  }
+
+  .sec-faq .sec-title .title-line {
+    width: 25px;
+    margin: 27px auto 30px;
+  }
+
+  .arrow {
+    height: 36px;
+  }
+
+  .sec-bg .more-box {
+    right: 27px;
+    bottom: 21px;
+  }
 }
 

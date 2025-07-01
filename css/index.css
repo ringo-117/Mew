@@ -435,8 +435,8 @@
 
 }
 
-@media screen and (min-width: 1081px) {
-  /* パソコン用レイアウト 1081px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
   #about {
     scroll-margin-top: 230px;
   }
@@ -525,7 +525,6 @@
   .sec-about .sec-title .title-jp {
     margin-left: 6px;
   }
-
 
   .sec-about .text {
     font-size: 15px;

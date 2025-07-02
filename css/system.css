@@ -137,6 +137,11 @@
     border-bottom: solid 1px #212121;
   }
 
+  .flow-text a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
   .item-end {
     margin-bottom: 90px;
   }

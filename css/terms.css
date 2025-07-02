@@ -101,3 +101,86 @@
   }
 
 }
+
+@media screen and (min-width: 601px) {
+  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_TERMS
+  ==============================================================*/
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+  #top {
+    scroll-margin-top: 260px;
+  }
+  /*==============================================================
+    　　PC_TERMS
+  ==============================================================*/
+  .terms {
+    margin: 180px 0 140px;
+  }
+
+  .sec-title {
+    margin: 260px 25px 130px 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    letter-spacing: 0.24em;
+    margin-right: -6px;
+    margin-bottom: 9px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.17em;
+  }
+
+  .system-line {
+    height: 53px;
+  }
+
+  .title-line {
+    width: 20px;
+    margin: 20px auto;
+  }
+
+  /* ==================== 文章 ================== */
+  .text-box {
+    font-size: 16px;
+    max-width: 1060px;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+  }
+
+  .text-box .text-title {
+    font-size: 18px;
+  }
+
+  .text-box .text {
+    margin-bottom: 45px;
+  }
+
+  ul.list {
+    display: block;
+    margin-left: 3px;
+  }
+
+  ul.custom-list li {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  ul.custom-list li.two-digit {
+    padding-left: 1.6em;
+    margin-left: -3px;
+  }
+
+  ul.custom-list li::before {
+    left: -25px;
+    width: 45px;
+  }
+}

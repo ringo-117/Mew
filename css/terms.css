@@ -156,8 +156,10 @@
     letter-spacing: 0.1em;
   }
 
+
   .text-box .text-title {
     font-size: 18px;
+    letter-spacing: 0.1em;
   }
 
   .text-box .text {

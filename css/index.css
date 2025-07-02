@@ -191,7 +191,6 @@
     align-items: center;
     justify-content: center;
     margin-left: 12px;
-
   }
 
   .more-box .more {
@@ -244,6 +243,7 @@
     height: 172px;
     background-size: 102%;
     background-position: 50% 50%;
+    background-size: cover;
   }
 
   .sec-system .sec-title {
@@ -425,13 +425,213 @@
   .map-link span {
     border-bottom: solid 1px #937218;
   }
+
+  .map-link span:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
 }
 
-@media screen and (min-width: 601px) {
-  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
     　　TB_TOP（ヒーロー）
   ==============================================================*/
+  .sec-top {
+    margin-top: 180px;
+  }
+
+  .sec-top .title-box {
+    top: 220px;
+    right: 138px;
+  }
+
+  .top-img {
+    width: calc(100% - 250px);
+    height: 590px;
+  }
+
+  .sec-top h1 {
+    font-size: 45px;
+  }
+
+  .sec-top .title-box .sub-title {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+  }
+
+  .sec-top .title-box .title-text {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    margin-top: 16px;
+  }
+
+
+  /*==================== aboutへ移動 ====================*/
+  .to-about-box {
+    width: 45px;
+    height: 45px;
+  }
+
+  .to-about-all {
+    height: 590px;
+  }
+
+  /*==============================================================
+    　　TB_ABOUT
+  ==============================================================*/
+  .sec-about {
+    margin: 225px 0 170px;
+  }
+
+  .sec-title .title {
+    font-size: 40px;
+    letter-spacing: 0.3em;
+    margin-left: 12px;
+  }
+
+  .sec-title .title-line {
+    width: 20px;
+    margin: 30px auto;
+  }
+
+  .sec-about .sec-title .title-jp {
+    margin-left: 7px;
+    font-size: 15px;
+  }
+
+  .sec-about .text-title {
+    font-size: 15px;
+    line-height: 3;
+    margin-top: 60px;
+    margin-bottom: 18px;
+    letter-spacing: 0.03em;
+    margin-left: 0;
+  }
+
+  .sec-about .text {
+    font-size: 15px;
+    line-height: 3;
+    margin-bottom: 65px;
+    letter-spacing: 0.03em;
+    margin-left: 0;
+  }
+
+  .more-box .more {
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    margin-right: 14px;
+  }
+
+  .arrow {
+    height: 40px;
+  }
+
+  /*==============================================================
+    　　TB_SYSTEM /MENU
+  ==============================================================*/
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 377px;
+    gap: 36px;
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+  .sec-system,
+  .sec-menu {
+    margin: 0;
+    height: 377px;
+  }
+
+  .sec-system .sec-title,
+  .sec-menu .sec-title {
+    font-size: 40px;
+    letter-spacing: 0.22em;
+  }
+
+  .sec-bg .title-line {
+    width: 20px;
+    margin: 23px auto;
+  }
+
+  .sec-system .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.2em;
+  }
+
+  .sec-bg .more-box {
+    right: 33px;
+    bottom: 18px;
+  }
+
+  /*==============================================================
+    　　TB_PHOTO
+  ==============================================================*/
+  .sec-photo {
+    margin-top: 160px;
+    padding: 0 32px;
+  }
+
+  .sec-photo .sec-title .title {
+    margin-left: 5px;
+  }
+
+  .swiper-slide {
+    margin-top: 56px;
+    height: 438px;
+  }
+
+  .swiper-slide figure {
+    height: 388px;
+  }
+
+  /*==============================================================
+    　　TB_SHOP
+  ==============================================================*/
+  .sec-shop {
+    margin-top: 160px;
+  }
+
+  .sec-shop .sec-title .title-line {
+    margin: 23px auto 75px;
+  }
+
+  .info {
+    font-size: 15px;
+    width: 457px;
+    row-gap: 20px;
+    margin-bottom: 105px;
+  }
+
+  .info dl{
+    font-size: 15px;
+  }
+
+  .info dt{
+    min-width: 225px;
+    font-optical-sizing: auto;
+  }
+
+  .map-link {
+    margin-top: 0;
+  }
+
+  .box_02 .address {
+    letter-spacing: 0.11em;
+  }
+  .box_02 .map-link {
+    letter-spacing: 0.04em;
+  }
+  .box_04 dd {
+    letter-spacing: 0.22em;
+  }
+  .box_05 dd {
+    letter-spacing: 0.11em;
+  }
 
 }
 
@@ -443,16 +643,9 @@
   /*==============================================================
     　　PC_TOP（ヒーロー）
   ==============================================================*/
-  .sec-top {
-    /* margin-top: 155px; */
-    margin-top: 180px;
-  }
-
   .sec-top .title-box {
     top: 200px;
-    /* right: 240px; */
     right: 133px;
-    /* left: 75%; */
   }
 
   .sec-top h1 {
@@ -466,26 +659,13 @@
   }
 
   .sec-top .title-box .title-text {
-    font-size: 12px;
-    line-height: 1.6;
     margin-top: 14px;
-  }
-
-  .top-img {
-    width: calc(100% - 250px);
-    /* width: 100%; */
-    /* margin-right: 250px; */
-    height: 590px;
   }
 
   /*==================== aboutへ移動 ====================*/
   .to-about-box {
     width: 43px;
     height: 43px;
-  }
-
-  .to-about-all {
-    height: 590px;
   }
 
   /*==============================================================
@@ -501,25 +681,17 @@
 
   .sec-title .title {
     font-size: 42px;
+    letter-spacing: 0.19em;
     margin-left: 9px;
   }
 
-  .sec-title .title-jp {
-    font-size: 15px;
-  }
-
   .sec-title .title-line {
-    width: 20px;
     margin: 20px auto;
   }
 
   .sec-about .text-title {
-    font-size: 15px;
     line-height: 2.8;
     margin-top: 65px;
-    margin-bottom: 18px;
-    letter-spacing: 0.03em;
-    margin-left: 0;
   }
 
   .sec-about .sec-title .title-jp {
@@ -527,17 +699,11 @@
   }
 
   .sec-about .text {
-    font-size: 15px;
-    line-height: 3;
     margin-bottom: 60px;
-    letter-spacing: 0.03em;
-    margin-left: 0;
   }
 
   .more-box .more {
-    font-size: 12px;
     letter-spacing: 0.21em;
-    margin-right: 14px;
   }
 
   .arrow {
@@ -548,18 +714,13 @@
     　　PC_SYSTEM /MENU
   ==============================================================*/
   .flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 380px;
     gap: 32px;
-    width: 100vw;
     padding: 0 25px;
   }
 
   .sec-system,
   .sec-menu {
-    margin: 0;
-    /* height: 330px; */
     height: 380px;
   }
 
@@ -592,21 +753,12 @@
   /*==============================================================
     　　PC_PHOTO
   ==============================================================*/
-  .sec-photo {
-    margin-top: 160px;
-  }
-
   .sec-photo .sec-title {
     margin-right: 0;
     margin-bottom: 70px;
   }
 
-  .sec-photo .sec-title .title {
-    margin-left: 5px;
-  }
-
   .swiper-slide {
-    margin-top: 56px;
     height: 485px;
   }
 
@@ -631,39 +783,13 @@
   }
 
   .info {
-    font-size: 15px;
     width: 500px;
     row-gap: 25px;
     margin-bottom: 135px;
   }
 
-  .info dl{
-    font-size: 15px;
-  }
-
   .info dt{
     min-width: 240px;
-    font-optical-sizing: auto;
   }
-
-  .map-link {
-    margin-top: 0;
-  }
-
-  .box_02 .address {
-    letter-spacing: 0.11em;
-  }
-  .box_02 .map-link {
-    letter-spacing: 0.04em;
-  }
-  .box_04 dd {
-    letter-spacing: 0.22em;
-  }
-  .box_05 dd {
-    letter-spacing: 0.11em;
-  }
-
-
-
 
 }

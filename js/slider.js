@@ -55,8 +55,8 @@ const swiper = new Swiper(".swiper", {
     },
     // 640px以上（タブレットなど）
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1,
+      spaceBetween: 32,
     },
     // 1024px以上（PC）
     1024: {

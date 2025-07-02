@@ -3,6 +3,10 @@
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  .br-pc {
+    display: none;
+  }
   /*==============================================================
   　　FAQ
   ==============================================================*/
@@ -134,7 +138,7 @@
     margin-right: 14px;
   }
 
-  .faq-title::after {
+  /* .faq-title::after {
     position: absolute;
     content: "";
     background-image: url(../img/icon-faq-open.svg);
@@ -144,7 +148,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 7px;
-  }
+  } */
 
   .faq-content {
     max-height: 0;
@@ -169,12 +173,192 @@
     transition: all 1.5s;
   }
 
-  .faq-toggle:checked + .faq-title::after {
+  /* .faq-toggle:checked + .faq-title::after {
     background-image: url(../img/icon-faq-close.svg);
     top: 30px;
+  } */
+
+
+  .faq-title {
+    position: relative;
+  }
+
+  /* 開く前のアイコン */
+  .faq-title::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon-faq-open.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* 開いた後のアイコン（::beforeで上書き） */
+  .faq-title::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon-faq-close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 22px; /* 開いた後の位置に表示したい */
+    right: 7px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* チェックが入ったらアイコンを切り替える */
+  .faq-toggle:checked + .faq-title::after {
+    opacity: 0;
+  }
+
+  .faq-toggle:checked + .faq-title::before {
+    opacity: 1;
   }
 
 }
 
+@media screen and (min-width: 601px) {
+  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_FAQ
+  ==============================================================*/
 
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+
+  .br-pc {
+    display: block;
+  }
+  /*==============================================================
+    　　PC_FAQ
+  ==============================================================*/
+  .faq {
+    margin: 180px 0 85px;
+  }
+
+  .sec-title {
+    margin: 32px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    letter-spacing: 0.42em;
+    margin-right: -18px;
+    margin-bottom: 16px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.17em;
+  }
+
+  .faq-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+  .faq-img img {
+    object-position: 50% 53%;
+  }
+
+
+  /* ==================== タイトル（中央） ================== */
+  .title-02 {
+    margin-bottom: 120px;
+  }
+
+  .title-02 .title {
+    font-size: 42px;
+    margin-left: 12px;
+  }
+
+  .title-02 .title-jp {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+
+  .title-02 .title-line {
+    width: 20px;
+    margin: 20px auto;
+  }
+
+
+  /*==============================================================
+  　　　PC_FAQ-BOX
+  ==============================================================*/
+  .faq-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+
+  .faq-box {
+    font-size: 15px;
+    letter-spacing: 0.3em;
+  }
+
+  .faq-title {
+    padding: 31px 150px 31px 130px;
+  }
+
+  .faq-box .title-text {
+    width: auto;
+  }
+
+  .faq-box .con-text {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 880px;
+  }
+
+  .faq-box #toggle05 .con-text {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 880px;
+  }
+
+  .faq-box p span {
+    font-size: 15px;
+    margin-right: 37px;
+  }
+
+  .faq-box .faq-A p span {
+    font-size: 15px;
+    margin-right: 37px;
+  }
+
+  .faq-title::after {
+    width: 18px;
+    height: 18px;
+    right: 150px;
+  }
+
+  .faq-title::before {
+    width: 30px;
+    height: 30px;
+    top: 24px;
+    right: 18px;
+  }
+
+  .faq-content .faq-A {
+    padding: 19px 5px 40px 130px;
+  }
+
+
+
+
+}
 

@@ -94,7 +94,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="css/faq.css?v=1.0">
   </head>
 
@@ -142,6 +142,22 @@
           <div class="cover"></div>
         </div>
       </nav>
+
+      <!-- {{-- TBヘッダー --}} -->
+      <nav class="tb-nav">
+        <div class="header">
+          <a class="logo-box" href="index.html">
+            <img src="img/logo.jpg" alt="Mewロゴ">
+          </a>
+          <ul id="nav_list" class="nav-list">
+            <li class="nav_item"><a href="index.html">HOME</a></li>
+            <li class="nav_item"><a href="about.html">ABOUT</a></li>
+            <li class="nav_item"><a href="system.html">SYSTEM</a></li>
+            <li class="nav_item"><a href="menu.html">MENU</a></li>
+            <li class="nav_item"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main id="top">
@@ -175,7 +191,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  お悩みや生活習慣のヒアリング、今後の施術プランをご提案します。もちろん無理に施術を勧めることはありませんので、お気軽にご相談ください。
+                  お悩みや生活習慣のヒアリング、今後の施術プランをご提案します。<br class="br-pc">もちろん無理に施術を勧めることはありませんので、お気軽にご相談ください。
                 </p>
               </div>
             </div>
@@ -193,7 +209,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  完全個室・予約制となっており、他のお客様と顔を合わせることはほとんどありません。プライバシーを大切にした空間で、安心して施術を受けていただけます。
+                  完全個室・予約制となっており、他のお客様と顔を合わせることはほとんどありません。<br class="br-pc">プライバシーを大切にした空間で、安心して施術を受けていただけます。
                 </p>
               </div>
             </div>
@@ -211,7 +227,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  基本的には併用可能ですが、施術の順番やタイミングには注意が必要です。事前にご相談いただければ、最適なスケジュールをご提案いたします。
+                  基本的には併用可能ですが、施術の順番やタイミングには注意が必要です。<br class="br-pc">事前にご相談いただければ、最適なスケジュールをご提案いたします。
                 </p>
               </div>
             </div>
@@ -229,7 +245,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  主に頭皮洗浄・血行促進・成長因子導入・マッサージなどを組み合わせた施術です。医療行為ではないため、痛みはほとんどなく、リラックスして受けていただける内容です。
+                  主に頭皮洗浄・血行促進・成長因子導入・マッサージなどを組み合わせた施術です。<br class="br-pc">医療行為ではないため、痛みはほとんどなく、リラックスして受けていただける内容です。
                 </p>
               </div>
             </div>
@@ -247,7 +263,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  早い方で1〜3ヶ月ほどで変化を感じられることが多いですが、髪の毛は成長に時間がかかるため、まずは6ヶ月を目安に継続いただくことをおすすめしています。初回カウンセリングで目安をしっかりお伝えいたします。
+                  早い方で1〜3ヶ月ほどで変化を感じられることが多いですが、髪の毛は成長に時間がかかるため、<br class="br-pc">まずは6ヶ月を目安に継続いただくことをおすすめしています。初回カウンセリングで目安をしっ<br class="br-pc">かりお伝えいたします。
                 </p>
               </div>
             </div>
@@ -265,7 +281,7 @@
               <div class="faq-A">
                 <P><span>A.</span></P>
                 <p class="con-text">
-                  AGA治療は主に医薬品を使った治療で、医師の診断が必要です。当サロンは、医療ではなく「育毛サロン」として頭皮のケア・生活改善をサポートします。副作用のリスクを避けたい方にも選ばれています。
+                  AGA治療は主に医薬品を使った治療で、医師の診断が必要です。当サロンは、医療ではなく「育毛<br class="br-pc">サロン」として頭皮のケア・生活改善をサポートします。副作用のリスクを避けたい方にも選ばれ<br class="br-pc">ています。
                 </p>
               </div>
             </div>
@@ -284,7 +300,18 @@
     </main>
 
     <footer class="footer">
-      <P class="copy">&copy; <span>Mew</span></P>
+      <div class="footer-item">
+        <img class="footer-img sp-none" src="img/footer-logo.png" alt="Mewロゴ">
+
+        <article class="footer-text-box">
+          <P class="footer-text sp-none">
+            Where gentle care meets innovation.<br>
+            A new hair growth experience.<br>
+            From Korea.
+          </P>
+          <P class="copy">&copy; <span>Mew</span></P>
+        </article>
+      </div>
       <div class="to-top-box">
         <a href="#top">
           <img src="img/icon-top.svg" alt="上矢印アイコン">

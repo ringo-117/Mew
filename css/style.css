@@ -335,6 +335,11 @@ html {
     letter-spacing: 0.17em;
   }
 
+  .header .nav_item:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
   .logo-box img {
     height: 48px;
   }

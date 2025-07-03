@@ -3,6 +3,10 @@
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  .about-text .tb-br {
+    display: none;
+  }
   /*==============================================================
   　　ABOUT
   ==============================================================*/
@@ -202,31 +206,31 @@
 }
 
 
-@media screen and (min-width: 601px) {
-  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+  .about-text .tb-br {
+    display: block;
+  }
+
+  .tb-none {
+    display: none;
+  }
   /*==============================================================
     　　TB_ABOUT
-  ==============================================================*/
-
-}
-
-@media screen and (min-width: 1024px) {
-  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
-  /*==============================================================
-    　　PC_ABOUT
   ==============================================================*/
   .about {
     margin: 180px 0 170px;
   }
 
   .sec-title {
-    margin: 32px 100px 0 0;
+    margin: 35px 100px 0 0;
   }
 
   .sec-title .title {
-    font-size: 42px;
-    letter-spacing: 0.18em;
-    margin-bottom: 16px;
+    font-size: 40px;
+    margin-right: -10px;
+    letter-spacing: 0.25em;
+    margin-bottom: 20px;
   }
 
   .sec-title .title-jp {
@@ -235,14 +239,14 @@
   }
 
   .about-img {
-    height: 370px;
+    height: 365px;
     padding-right: 100px;
   }
 
   .about-top-text .text-title {
     font-size: 15px;
     line-height: 2.8;
-    margin-top: 83px;
+    margin-top: 80px;
     margin-bottom: 18px;
     letter-spacing: 0.03em;
     margin-left: 0;
@@ -255,39 +259,39 @@
   .about-top-text .text {
     font-size: 15px;
     line-height: 3;
-    margin-bottom: 120px;
+    margin-bottom: 95px;
     letter-spacing: 0.03em;
     margin-left: 0;
   }
 
   /* ==================== 画像-01 ================== */
   .about-img-01 {
-    max-width: 1020px;
+    padding: 0 70px;
     margin: 0 auto;
   }
 
   /*==============================================================
-  　　ESSENCE
+  　　TB_ESSENCE
   ==============================================================*/
   .sec-essence {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
   }
 
   .about-text.short {
     font-size: 20px;
     line-height: 3;
-    margin-top: 115px;
-    letter-spacing: 0.15em;
+    margin-top: 95px;
+    letter-spacing: 0.10em;
   }
 
   .about-text.long {
     font-size: 15px;
     line-height: 2.5;
-    width: 847.5px;
+    width: 680.5px;
     margin: 0 auto;
     margin-bottom: 32px;
-    letter-spacing: 0.2em;
-    padding-left: 2.5px;
+    letter-spacing: 0;
+    padding-left: 3px;
   }
 
   .about-line {
@@ -312,7 +316,7 @@
     width: 100%;
     height: 400px;
     padding-left: 100px;
-    margin-top: 110px;
+    margin-top: 80px;
   }
 
   .essence-img img {
@@ -320,18 +324,14 @@
   }
 
   /*==============================================================
-    　　PC_SYSTEM
+    　　TB_SYSTEM
   ==============================================================*/
   .sec-system {
     margin: 0 27px 30px;
-    height: 220px;
-    max-width: 845px;
+    height: 226px;
+    max-width: 650px;
     margin: 0 auto;
-    margin-bottom: 120px;
-  }
-
-  .sec-system .sec-title {
-    margin-bottom: 5px;
+    margin-bottom: 82px;
   }
 
   .sec-system .sec-title .title {
@@ -340,17 +340,113 @@
   }
 
   .sec-system .sec-title .title-jp {
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 0.31em;
   }
 
   .sec-system .sec-title .title-line {
-    width: 25px;
+    width: 20px;
     margin: 30px auto;
   }
 
   .arrow {
     height: 36px;
+  }
+
+  .sec-bg .more-box {
+    right: 30px;
+    bottom: 22px;
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+  .about-text .tb-br {
+    display: none;
+  }
+
+  .tb-none {
+    display: block;
+  }
+  /*==============================================================
+    　　PC_ABOUT
+  ==============================================================*/
+  .sec-title {
+    margin: 32px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 42px;
+    margin-right: -6px;
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+
+  .about-img {
+    height: 370px;
+  }
+
+  .about-top-text .text-title {
+    margin-top: 83px;
+  }
+
+  .about-top-text .sec-title .title-jp {
+    margin-left: 6px;
+  }
+
+  .about-top-text .text {
+    margin-bottom: 120px;
+  }
+
+  /* ==================== 画像-01 ================== */
+  .about-img-01 {
+    max-width: 1080px;
+    padding: 0 30px;
+  }
+
+  /*==============================================================
+  　　ESSENCE
+  ==============================================================*/
+  .sec-essence {
+    margin-bottom: 130px;
+  }
+
+  .about-text.short {
+    margin-top: 115px;
+    letter-spacing: 0.15em;
+  }
+
+  .about-text.long {
+    width: 847.5px;
+    letter-spacing: 0.2em;
+    padding-left: 2.5px;
+  }
+
+  .essence-img {
+    margin-top: 110px;
+  }
+
+  /*==============================================================
+    　　PC_SYSTEM
+  ==============================================================*/
+  .sec-system {
+    height: 220px;
+    max-width: 845px;
+    margin-bottom: 120px;
+  }
+
+  .sec-system .sec-title {
+    margin-bottom: 5px;
+  }
+
+  .sec-system .sec-title .title-jp {
+    font-size: 13px;
+  }
+
+  .sec-system .sec-title .title-line {
+    width: 25px;
   }
 
   .sec-bg .more-box {

@@ -340,7 +340,7 @@
   }
 
   .sec-system .sec-title .title-jp {
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.31em;
   }
 
@@ -439,10 +439,6 @@
 
   .sec-system .sec-title {
     margin-bottom: 5px;
-  }
-
-  .sec-system .sec-title .title-jp {
-    font-size: 13px;
   }
 
   .sec-system .sec-title .title-line {

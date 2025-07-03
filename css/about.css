@@ -287,7 +287,7 @@
   .about-text.long {
     font-size: 15px;
     line-height: 2.5;
-    width: 680.5px;
+    width: 682px;
     margin: 0 auto;
     margin-bottom: 32px;
     letter-spacing: 0;
@@ -407,7 +407,7 @@
   }
 
   /*==============================================================
-  　　ESSENCE
+  　　PC_ESSENCE
   ==============================================================*/
   .sec-essence {
     margin-bottom: 130px;
@@ -419,7 +419,7 @@
   }
 
   .about-text.long {
-    width: 847.5px;
+    width: 850px;
     letter-spacing: 0.2em;
     padding-left: 2.5px;
   }

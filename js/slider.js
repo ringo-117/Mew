@@ -60,6 +60,11 @@ const swiper = new Swiper(".swiper", {
     },
     // 1024px以上（PC）
     1024: {
+      slidesPerView: 1.3,
+      spaceBetween: 30,
+    },
+    // 1450px以上（PC）
+    1450: {
       slidesPerView: 1.8,
       spaceBetween: 30,
     }

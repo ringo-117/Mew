@@ -390,7 +390,7 @@
     margin-top: 30px;
   }
 
-    /* ==================== 縦線と丸 ================== */
+  /* ==================== 縦線と丸 ================== */
   .flow-line-box {
     position: absolute;
     top: 0;
@@ -409,12 +409,10 @@
 
   .flow-circle-all img:nth-of-type(3) {
     margin-top: 638px;
-    /* margin-top: 650px; */
-
   }
 
   .flow-line {
-    height: 865px;
+    height: 920px;
     left: 14px;
   }
 

@@ -371,7 +371,7 @@
 
   .flow-02 .flow-text.long {
     margin-bottom: 60px;
-    max-width: 315px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: -10px;
   }
@@ -409,6 +409,8 @@
 
   .flow-circle-all img:nth-of-type(3) {
     margin-top: 638px;
+    /* margin-top: 650px; */
+
   }
 
   .flow-line {
@@ -548,7 +550,8 @@
   }
 
   .flow-02 {
-    max-width: 393px;
+    /* max-width: 393px; */
+    max-width: 400px;
   }
 
   .flow-num {
@@ -580,9 +583,8 @@
 
   .flow-02 .flow-text.long {
     margin-bottom: 0;
-    max-width: none;
-    margin-right: 0;
-
+    max-width: 400px;
+    margin-right: -18px;
   }
 
   .flow-img {

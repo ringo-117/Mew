@@ -4,7 +4,8 @@
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
 
-  .br-pc {
+  .br-pc,
+  .tb_only {
     display: none;
   }
   /*==============================================================
@@ -229,9 +230,136 @@
 
 @media screen and (min-width: 640px) {
   /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+
+  .tb_only {
+    display: block;
+  }
   /*==============================================================
     　　TB_FAQ
   ==============================================================*/
+  .faq {
+    margin: 180px 0 80px;
+  }
+
+  .sec-title {
+    margin: 35px 100px 0 0;
+  }
+
+  .sec-title .title {
+    font-size: 40px;
+    letter-spacing: 0.42em;
+    margin-right: -18px;
+    margin-bottom: 24px;
+  }
+
+  .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.17em;
+  }
+
+  .faq-img {
+    height: 370px;
+    padding-right: 100px;
+  }
+
+  .faq-img img {
+    object-position: 50% 53%;
+  }
+
+  /* ==================== タイトル（中央） ================== */
+  .title-02 {
+    margin-bottom: 60px;
+  }
+
+  .title-02 .title {
+    font-size: 40px;
+    margin-left: 12px;
+    letter-spacing: 0.25em;
+  }
+
+  .title-02 .title-jp {
+    font-size: 15px;
+    margin-left: 3px;
+  }
+
+  .title-02 .title-line {
+    width: 20px;
+    margin: 30px auto;
+  }
+
+  /*==============================================================
+  　　　TB_FAQ-BOX
+  ==============================================================*/
+  .faq-main {
+    margin: 0 83px 120px;
+  }
+
+  .faq-box {
+    font-size: 15px;
+    letter-spacing: 0.15em;
+  }
+
+  .faq-title {
+    padding: 21px;
+  }
+
+  .faq-box .title-text {
+    width: auto;
+  }
+
+  .faq-box .con-text {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 480px;
+    margin-top: -3px;
+  }
+
+  /* 回答欄_幅 */
+  .faq-box.box-01 .con-text {
+    width: 445px;
+  }
+  .faq-box.box-02 .con-text {
+    width: 505px;
+  }
+  .faq-box.box-03 .con-text {
+    width: 490px;
+  }
+  .faq-box.box-04 .con-text {
+    width: 501px;
+  }
+  .faq-box.box-05 .con-text {
+    width: 530px;
+  }
+  .faq-box.box-06 .con-text {
+    width: 550px;
+  }
+
+  .faq-box p span {
+    font-size: 15px;
+    margin-right: 37px;
+  }
+
+  .faq-box .faq-A p span {
+    font-size: 15px;
+    margin-right: 37px;
+  }
+
+  .faq-title::after {
+    width: 16px;
+    height: 16px;
+    right: 30px;
+  }
+
+  .faq-title::before {
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 23px;
+  }
+
+  .faq-content .faq-A {
+    padding: 19px 30px 40px 21px;
+  }
 
 }
 
@@ -241,6 +369,10 @@
 
   .br-pc {
     display: block;
+  }
+
+  .tb_only {
+    display: none;
   }
   /*==============================================================
     　　PC_FAQ
@@ -260,21 +392,6 @@
     margin-bottom: 16px;
   }
 
-  .sec-title .title-jp {
-    font-size: 15px;
-    letter-spacing: 0.17em;
-  }
-
-  .faq-img {
-    height: 370px;
-    padding-right: 100px;
-  }
-
-  .faq-img img {
-    object-position: 50% 53%;
-  }
-
-
   /* ==================== タイトル（中央） ================== */
   .title-02 {
     margin-bottom: 120px;
@@ -282,16 +399,9 @@
 
   .title-02 .title {
     font-size: 42px;
-    margin-left: 12px;
-  }
-
-  .title-02 .title-jp {
-    font-size: 10px;
-    margin-left: 3px;
   }
 
   .title-02 .title-line {
-    width: 20px;
     margin: 20px auto;
   }
 
@@ -306,7 +416,6 @@
   }
 
   .faq-box {
-    font-size: 15px;
     letter-spacing: 0.3em;
   }
 
@@ -318,26 +427,28 @@
     width: auto;
   }
 
-  .faq-box .con-text {
-    font-size: 15px;
-    line-height: 1.6;
+  /* 回答欄_幅 */
+  .faq-box.box-01 .con-text {
+    width: 880px;
+
+  }
+  .faq-box.box-02 .con-text {
+    width: 880px;
+
+  }
+  .faq-box.box-03 .con-text {
     width: 880px;
   }
-
-  .faq-box #toggle05 .con-text {
+  .faq-box.box-04 .con-text {
+    width: 880px;
+  }
+  .faq-box.box-05 .con-text {
+    width: 880px;
     font-size: 14px;
     line-height: 1.6;
+  }
+  .faq-box.box-06 .con-text {
     width: 880px;
-  }
-
-  .faq-box p span {
-    font-size: 15px;
-    margin-right: 37px;
-  }
-
-  .faq-box .faq-A p span {
-    font-size: 15px;
-    margin-right: 37px;
   }
 
   .faq-title::after {
@@ -347,8 +458,6 @@
   }
 
   .faq-title::before {
-    width: 30px;
-    height: 30px;
     top: 24px;
     right: 18px;
   }

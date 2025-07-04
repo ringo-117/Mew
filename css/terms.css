@@ -112,7 +112,8 @@
   }
 
   .sec-title {
-    margin: 230px auto 100px;
+    margin: 230px auto 110px;
+    padding-left: 5px;
   }
 
   .sec-title .title {
@@ -195,6 +196,7 @@
 
   .sec-title {
     margin: 260px auto 130px;
+    padding-left: 0;
   }
 
   .sec-title .title {

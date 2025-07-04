@@ -331,7 +331,7 @@
     width: 530px;
   }
   .faq-box.box-06 .con-text {
-    width: 580px;
+    width: 560px;
   }
 
   .faq-box p span {
@@ -358,7 +358,7 @@
   }
 
   .faq-content .faq-A {
-    padding: 19px 30px 40px 21px;
+    padding: 19px 0 40px 21px;
   }
 
 }
@@ -430,11 +430,9 @@
   /* 回答欄_幅 */
   .faq-box.box-01 .con-text {
     width: 880px;
-
   }
   .faq-box.box-02 .con-text {
     width: 880px;
-
   }
   .faq-box.box-03 .con-text {
     width: 880px;

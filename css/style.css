@@ -398,11 +398,14 @@ html {
   }
 
   .footer .footer-img {
-    width: 75px;
+    /* width: 75px; */
     margin-right: 90px;
 
     /* 修正 */
     margin-top: 5px;
+
+    /* 縮小版 */
+    width: 68px;
   }
 
   .footer-text-box {
@@ -483,11 +486,14 @@ html {
   }
 
   .footer .footer-img {
-    width: 100px;
+    /* width: 100px; */
     /* margin-right: 198px; */
 
     margin-top: 4px;
     margin-right: 160px;
+
+    /* 縮小版 */
+    width: 90px;
 
   }
 

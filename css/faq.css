@@ -33,7 +33,7 @@
   }
 
   .faq-img {
-    width: 100%;
+    width: calc(100% - 25px);
     height: 215px;
     padding-right: 25px;
     overflow: hidden;
@@ -43,7 +43,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 38%;
+    transform: scale(1.24);
+    object-position: 0% 20%;
+    padding-left: 15px;
+    padding-top: 5px;
   }
 
   /* ==================== タイトル（中央） ================== */
@@ -263,6 +266,13 @@
   }
 
   .faq-img img {
+    transform: scale(1);
+    object-position: 0% 20%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .faq-img img {
     object-position: 50% 53%;
   }
 
@@ -392,6 +402,10 @@
     margin-bottom: 16px;
   }
 
+  .faq-img img {
+    object-position: 0% 45%;
+  }
+
   /* ==================== タイトル（中央） ================== */
   .title-02 {
     margin-bottom: 120px;
@@ -464,8 +478,15 @@
     padding: 19px 5px 40px 130px;
   }
 
-
-
-
 }
 
+@media screen and (min-width: 1450px) {
+  /* パソコン用レイアウト 1450px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC_SYSTEM
+  ==============================================================*/
+  /* トップ画像 */
+  .faq-img img {
+    object-position: 0% 52%;
+  }
+}

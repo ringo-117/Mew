@@ -116,9 +116,9 @@
     letter-spacing: 0.22em;
   }
 
-  .flow-03 .flow-title {
+  /* .flow-03 .flow-title {
     line-height: 1.6;
-  }
+  } */
 
   .flow-text {
     font-size: 11px;
@@ -133,7 +133,11 @@
 
   .flow-text.long {
     line-height: 2.8em;
-    letter-spacing: -0.1em;
+    /* letter-spacing: -0.1em; */
+
+    /* 修正版 */
+    letter-spacing: 0.01em;
+    max-width: 300px;
   }
 
   .flow-text a {
@@ -155,9 +159,9 @@
     margin-top: 30px;
   }
 
-  .flow-03 .flow-img {
+  /* .flow-03 .flow-img {
     margin-top: 27px;
-  }
+  } */
 
   .flow-img img {
     width: 100%;
@@ -315,14 +319,20 @@
   ==============================================================*/
   .flow{
     position: relative;
-    width: 770px;
+    /* width: 770px; */
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 20px;
+
+    /* 修正 */
+    width: 740px;
   }
 
   .flow-box {
-    width: 770px;
+    /* width: 770px; */
+
+    /* 修正 */
+    width: 740px;
   }
 
   .flow-01,
@@ -344,10 +354,10 @@
     font-size: 16px;
   }
 
-  .flow-03 .flow-title {
+  /* .flow-03 .flow-title {
     line-height: 2.3;
     margin-top: -6px;
-  }
+  } */
 
   .flow-text {
     font-size: 16px;
@@ -359,14 +369,18 @@
     margin-top: 35px;
     letter-spacing: 0.01em;
     margin-bottom: 70px;
+
+    line-height: 2;
   }
 
   .flow-text.long {
     line-height: 2.5em;
-    letter-spacing: -0.1em;
+    /* letter-spacing: -0.1em; */
+    letter-spacing: 0.01em;
     text-align: left;
     /* min-width: 330px; */
     margin-top: 18px;
+    max-width: none;
   }
 
   .flow-02 .flow-text.long {
@@ -374,6 +388,10 @@
     max-width: 320px;
     margin-left: auto;
     margin-right: -10px;
+  }
+
+  .flow-03 .flow-text.long {
+    max-width: 330px;
   }
 
   .flow-img {
@@ -386,9 +404,9 @@
     margin-left: auto;
   }
 
-  .flow-03 .flow-img {
+  /* .flow-03 .flow-img {
     margin-top: 30px;
-  }
+  } */
 
   /* ==================== 縦線と丸 ================== */
   .flow-line-box {
@@ -405,6 +423,10 @@
 
   .flow-circle-all img:nth-of-type(2) {
     margin-top: 228px;
+
+    /* 修正 */
+    margin-top: 272px;
+
   }
 
   .flow-circle-all img:nth-of-type(3) {
@@ -572,6 +594,7 @@
   .flow-01 .item-end {
     margin-top: 45px;
     margin-bottom: 30px;
+    line-height: 1.15;
   }
 
   .flow-text.long {
@@ -583,6 +606,10 @@
     margin-bottom: 0;
     max-width: 400px;
     margin-right: -18px;
+  }
+
+  .flow-03 .flow-text.long {
+    max-width: none;
   }
 
   .flow-img {

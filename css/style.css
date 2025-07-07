@@ -138,17 +138,20 @@ html {
   }
 
   .page-link.top {
-    padding: 145px 0 0 50px;
+    /* padding: 145px 0 0 50px; */
+    padding: 140px 0 0 50px;
   }
   .page-link {
     padding: 0 0 0 50px;
   }
 
   .nav_item {
-    font-size: 18px;
+    /* font-size: 18px; */
     letter-spacing: 0.2em;
     font-weight: 600;
     margin-bottom: 27px;
+
+    font-size: 20px;
   }
 
   .sns-box {
@@ -159,33 +162,54 @@ html {
     align-items: center;
     gap: 12px;
     margin-bottom: 64px;
+
+    font-size: 9.5px;
+    gap: 12.5px;
+
+    margin-bottom: 75px;
+    /* margin-bottom: 27px; */
   }
 
   .sns-icon {
+    /* width: 28px;
+    height: 28px; */
+
+    width: 29px;
+    height: 29px;
+  }
+
+  .sns-icon.tiktok {
+    /* width: 27px;
+    height: 27px; */
+
     width: 28px;
     height: 28px;
   }
 
-  .sns-icon.tiktok {
-    width: 27px;
-    height: 27px;
-  }
-
   .sns-box p {
     margin-right: 10px;
+    font-weight: bold;
+
+    margin-right: 8px;
   }
   .copy-box p.copy {
-    margin-right: 0px;
+    /* margin-right: 0px; */
     font-size: 8px;
-    width: 198px;
-    margin: 0 auto;
+    /* width: 198px; */
+    /* margin: 0 auto; */
+
+    /* font-size: 9px; */
   }
 
   .con-bottom {
-    position: absolute;
+    /* position: absolute;
     bottom: 70px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+
+    margin-top: 65px;
+    /* margin-top: 75px; */
+    padding-left: 50px;
   }
 
 

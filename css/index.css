@@ -61,6 +61,7 @@
     /* height: 426px; */
     /* height: 400px; */
     height: 385px;
+    overflow: hidden;
   }
 
   .top-img img {
@@ -238,7 +239,7 @@
     　　SYSTEM
   ==============================================================*/
   .sec-system {
-    background-image: url(../img/system.png);
+    background-image: url(../img/system.webp);
     margin: 0 27px 20px;
     height: 172px;
     background-size: 102%;
@@ -311,14 +312,18 @@
 
 
   /*==============================================================
-    　　PHOTO
+    　　Before & After（PHOTO）
   ==============================================================*/
   .sec-photo {
     margin-top: 86px;
   }
 
   .sec-photo .sec-title .title {
-    margin-left: 3.3px;
+    /* margin-left: 3.3px; */
+
+    /* Before & After */
+    margin-right: 5px;
+    margin-left: 0;
   }
 
   .swiper-slide {
@@ -581,7 +586,12 @@
   }
 
   .sec-photo .sec-title .title {
-    margin-left: 5px;
+    /* margin-left: 5px; */
+
+    /* Before & After */
+    margin-right: 14px;
+    letter-spacing: 0.21em;
+    margin-left: 0;
   }
 
   .swiper-slide {
@@ -661,6 +671,10 @@
 
   .sec-top .title-box .title-text {
     margin-top: 14px;
+  }
+
+  .top-img img {
+    object-position: 50% 88%;
   }
 
   /*==================== aboutへ移動 ====================*/
@@ -764,6 +778,14 @@
     margin-bottom: 70px;
   }
 
+  .sec-photo .sec-title .title {
+    /* Before & After */
+    margin-right: 20px;
+    margin-left: 0;
+    letter-spacing: 0.15em;
+  }
+
+
   .swiper-slide {
     height: 485px;
   }
@@ -798,4 +820,14 @@
     min-width: 240px;
   }
 
+}
+
+@media screen and (min-width: 1450px) {
+  /* パソコン用レイアウト 1450px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC_TOP（ヒーロー）
+  ==============================================================*/
+  .top-img img {
+    object-position: 50% 60%;
+  }
 }

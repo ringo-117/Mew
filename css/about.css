@@ -97,6 +97,7 @@
     line-height: 2.8;
     margin-top: 50px;
     /* margin-bottom: 54px; */
+    color: #525252;
   }
 
   .about-text.long {
@@ -105,12 +106,14 @@
     line-height: 2.3;
     width: 300px;
     margin: 0 auto;
+    color: #868686;
   }
 
   .about-line {
     width: 1px;
     height: 20px;
-    background-color: #212121;
+    /* background-color: #212121; */
+    background-color: #525252;
     margin: 28px auto 28px;
   }
 
@@ -155,7 +158,7 @@
     　　SYSTEM
   ==============================================================*/
   .sec-system {
-    background-image: url(../img/system.png);
+    background-image: url(../img/system.webp);
     margin: 0 27px 30px;
     height: 172px;
     background-size: 102%;
@@ -244,12 +247,17 @@
   }
 
   .about-top-text .text-title {
-    font-size: 15px;
+    /* font-size: 15px; */
     line-height: 2.8;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 18px;
     letter-spacing: 0.03em;
     margin-left: 0;
+
+    /* 修正版 */
+    font-size: 20px;
+    line-height: 3;
+    margin-top: 83px;
   }
 
   .about-top-text .sec-title .title-jp {
@@ -389,7 +397,10 @@
   }
 
   .about-top-text .text-title {
-    margin-top: 83px;
+    /* margin-top: 83px; */
+
+    /* 修正版 */
+    margin-top: 115px;
   }
 
   .about-top-text .sec-title .title-jp {

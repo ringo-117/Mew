@@ -109,30 +109,12 @@
     margin-top: 7px;
     margin-left: 11.5px;
   }
-  /* .to-about::before,
-  .to-about::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 0.5px);
-    width: 1px;
-    height: 6.8px;
-    border-radius: 9999px;
-    background-color: #000000;
-    transform-origin: 50% calc(100% - 0.5px);
-  }
-  .to-about::before {
-    transform: rotate(45deg);
-  }
-  .to-about::after {
-    transform: rotate(-45deg);
-  } */
 
   /*==============================================================
     　　ABOUT
   ==============================================================*/
   .sec-about {
-    margin: 80px 0 100px;
+    margin: 80px 0 86px;
     /* margin: 60px 0; */
     text-align: center;
   }
@@ -210,29 +192,101 @@
     /* margin-left: 14px; */
   }
 
-  /* .arrow::before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: 0;
-    width: 4px;
-    height: 0.5px;
-    border-radius: 9999px;
-    background-color: #000;
-    transform: rotate(45deg);
-    transform-origin: calc(100% - 2px) 50%;
+
+  /*==============================================================
+    　　MOVIE
+  ==============================================================*/
+  .movie {
+    position: relative;
+    width: 100vw;
+    margin: 72px auto 0;
+    padding: 0 27px;
   }
 
-  .arrow::after {
-    content: "";
+  .modal-open-movie {
+    cursor: pointer;
+  }
+
+  .movie .movie-img {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .movie .movie-img img {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+    filter: brightness(85%);
+    height: auto;
+    transition: transform .6s ease;
+  }
+
+  .movie .movie-img:hover img {
+    transform: scale(1.1);
+  }
+
+  .movie .movie-icon img{
+    width: 50px;
     position: absolute;
-    top: -8.7px;
-    left: -9.5px;
-    width: 19px;
-    height: 19px;
-    border: solid 0.5px #000;
-    border-radius: 50%;
-  } */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-movie {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    display: none;
+  }
+
+  .movie-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 60px);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+
+  .modal-movie iframe {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-movie span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 38px;
+    color: #fff;
+    z-index: 997;
+    cursor: pointer;
+  }
+
+  .movie-p {
+    margin: 0 auto;
+    font-size: 10.5px;
+    margin-top: 12px;
+    line-height: 1.8em;
+    padding: 0 27px;
+    margin-bottom: 100px;
+    max-width: 900px;
+  }
+
+
 
 
   /*==============================================================
@@ -492,7 +546,7 @@
     　　TB_ABOUT
   ==============================================================*/
   .sec-about {
-    margin: 225px 0 170px;
+    margin: 225px 0 165px;
   }
 
   .sec-title .title {
@@ -536,6 +590,31 @@
 
   .arrow {
     height: 40px;
+  }
+
+  /*==============================================================
+    　　TB_MOVIE
+  ==============================================================*/
+  .movie {
+    margin: 140px auto 0;
+    padding: 0 30px;
+  }
+
+  .movie .movie-icon img{
+    width: 73px;
+  }
+
+  .modal-movie span {
+    /* transform: translateY(-270px);
+    right: 38px; */
+    font-size: 48px;
+  }
+
+  .movie-p {
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 165px;
+    padding: 0 30px;
   }
 
   /*==============================================================
@@ -618,7 +697,8 @@
     font-size: 15px;
     width: 457px;
     row-gap: 20px;
-    margin-bottom: 105px;
+    /* margin-bottom: 105px; */
+    margin-bottom: 160px;
   }
 
   .info dl{
@@ -723,6 +803,27 @@
 
   .arrow {
     height: 35px;
+  }
+
+  /*==============================================================
+    　　PC_MOVIE
+  ==============================================================*/
+  .movie {
+    margin: 150px auto 0;
+  }
+
+  .modal-movie iframe {
+    width: 80%;
+  }
+
+  .modal-movie span {
+    top: 15px;
+    right: 25px;
+  }
+
+  .movie-p {
+    margin-bottom: 180px;
+    padding: 0;
   }
 
   /*==============================================================

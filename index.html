@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Goudy+Bookletter+1911&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
 
     <!-- ファビコン -->
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- <link rel="shortcut icon" href="./img/favicon.ico"> -->
 
     <!-- css -->
     <link rel="stylesheet" href="css/destyle.css">
@@ -40,7 +40,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css?v=1.8">
-    <link rel="stylesheet" href="css/index.css?v=2.2">
+    <link rel="stylesheet" href="css/index.css?v=2.3">
   </head>
 
   <body>
@@ -156,6 +156,27 @@
             <!-- <span class="arrow"></span> -->
           </a>
         </article>
+      </section>
+
+      <section class="sec-movie">
+        <div class="movie">
+          <article id="modal-open-movie" class="modal-open-movie">
+            <div>
+              <figure class="movie-img">
+                <img src="img/movie.webp" alt="Mewイメージ">
+              </figure>
+              <figure class="movie-icon">
+                <img class="movie-icon1" src="img/icon-movie.svg" alt="動画再生アイコン">
+              </figure>
+            </div>
+          </article>
+          <div class="modal-movie">
+            <span>&times;</span>
+            <iframe width="1920px" height="1080px" src="https://www.youtube.com/embed/ge3gT9G2m2A?si=AYzdSQ2_BOlLQcU4&autoplay=1&mute=1&rel=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="movie-bg"></div>
+          </div>
+        </div>
+        <p class="movie-p">※ 設定から高画質(4Kなど)を選択してのご視聴をおすすめします。</p>
       </section>
 
       <div class="flex">
@@ -292,6 +313,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slider.js?v=1.1"></script>
+    <script src="js/movie.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -351,7 +351,6 @@
 
   .item-img img {
     object-position: 50% 42%;
-
   }
 
   .item .sec-title .title-jp {
@@ -367,7 +366,7 @@
     font-size: 16px;
     line-height: 3;
     padding: 0;
-    width: 710px;
+    width: 720px;
   }
 
   .item .item-text span {

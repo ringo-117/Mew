@@ -314,7 +314,7 @@
   }
 
   .sec-bg {
-    background-color: rgba(70, 70, 70, 0.3);
+    background-color: rgba(110, 110, 110, 0.3);
     width: 100%;
     height: 100%;
     align-content: center;
@@ -418,13 +418,11 @@
   .sec-faq .sec-title .title {
     font-size: 36px;
     letter-spacing: 0.17em;
-    text-shadow: #bebebe 0 0 5px;
   }
 
   .sec-faq .sec-title .title-jp {
     font-size: 13px;
     letter-spacing: 0.21em;
-    text-shadow: #bebebe 0 0 5px;
   }
 
   .sec-faq .sec-title .title-line {

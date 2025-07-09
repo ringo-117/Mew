@@ -3,6 +3,10 @@
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+  .sp-none {
+    display: none;
+  }
   /*==============================================================
   　　MENU
   ==============================================================*/
@@ -112,7 +116,8 @@
     width: 14px;
     height: 1px;
     background-color: #212121;
-    margin: 12px auto 38px;
+    /* margin: 12px auto 38px; */
+    margin: 12px auto;
   }
 
   .course .sec-title .title-jp {
@@ -143,13 +148,16 @@
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.24em;
+    justify-items: center;
   }
 
-  .course-box {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.24em;
-    justify-items: center;
+  .course-box.sp-only {
+    /* letter-spacing: 0.2em; */
+
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 65px;
+    /* margin-top: 50px; */
   }
 
   .course-box .course-num {
@@ -158,49 +166,64 @@
   }
 
   .course-box .course-box-item {
-    display: flex;
-    /* justify-content: center; */
+    /* display: flex;
     margin: 0 auto;
-
     margin-bottom: 45px;
-    /* width: 358px; */
-    width: 353px;
+    width: 340px; */
+
+    margin-bottom: 30px;
   }
 
   /*==============================================================
     　　Care Item
   ==============================================================*/
   .item {
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 86px;
   }
 
   .item .sec-title .title {
     letter-spacing: 0.1em;
   }
 
-  .item .sec-title .title-line {
+  /* .item .sec-title .title-line {
     margin: 12px auto 40px;
-  }
+  } */
 
   .item .item-box {
-    display: flex;
+    /* display: flex;
     align-items: end;
     margin: 16px auto 25px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 20px; */
+    margin: 0 20px;
   }
 
-  .item .item-box .box-01 .price {
+  .item .item-box .price {
+    text-align: center;
+    /* margin: 20px 0 28px; */
+
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    font-weight: 600;
+    margin: 20px 0 42px;
+
+  }
+
+  /* .item .item-box .box-01 .price {
     text-align: center;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.24em;
     margin-top: 10px;
-  }
+  } */
 
   .item-img {
-    width: 145px;
-    height: 145px;
+    width: 100%;
+    height: 172px;
     overflow: hidden;
+
+    margin-top: 70px;
+    /* margin-top: 60px; */
   }
 
   .item-img img {
@@ -209,7 +232,18 @@
     object-fit: cover;
   }
 
-  .item .item-box .box-02 {
+  .item .sec-title .title-jp {
+    font-size: 11px;
+    letter-spacing: 0em;
+    line-height: 2.8;
+    /* margin-left: 10px; */
+  }
+
+  .item .sec-title .title-jp span {
+    letter-spacing: 0.1em;
+  }
+
+  /* .item .item-box .box-02 {
     font-size: 11px;
     font-weight: 600;
     line-height: 1.5;
@@ -221,7 +255,7 @@
     font-weight: 900;
     margin-bottom: 3px;
     letter-spacing: 0.1em;
-  }
+  } */
 
   .item .item-text {
     font-size: 11px;
@@ -229,6 +263,10 @@
     font-weight: 600;
     line-height: 2.3;
     padding: 0 0 0 20px;
+  }
+
+  .item .item-text span {
+    letter-spacing: 0.24em;
   }
 
 
@@ -243,7 +281,7 @@
     background-size: 102%;
     background-position: 25% 50%;
 
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .sec-faq .sec-title {
@@ -298,6 +336,14 @@
 
 @media screen and (min-width: 640px) {
   /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+
+  .sp-none {
+    display: block;
+  }
+
+  .sp-only {
+    display: none;
+  }
   /*==============================================================
     　　TB_MENU
   ==============================================================*/
@@ -403,7 +449,7 @@
     　　PC_MENU
   ==============================================================*/
   .menu {
-    margin: 180px 0 75px;
+    margin: 180px 0 85px;
   }
 
   .sec-title {
@@ -456,6 +502,105 @@
     line-height: 2;
     margin-left: 8px;
   } */
+
+  /*==============================================================
+  　　PC_COURSE
+  ==============================================================*/
+  .content .sec-title .title-line {
+    width: 20px;
+    /* margin: 20px auto 45px; */
+    margin: 20px auto;
+
+  }
+
+  .course .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.51em;
+    line-height: 3;
+    margin-left: 10px;
+  }
+
+  .course .sec-title .title-jp span {
+    letter-spacing: 0.48em;
+  }
+
+  .course-img {
+    width: 950px;
+    /* width: auto; */
+    /* max-width: 1000px; */
+    height: 200px;
+    margin: 110px auto 110px;
+    /* margin: 110px 280px 100px; */
+  }
+
+  .course-box {
+    font-size: 16px;
+  }
+
+  .course-box .course-num {
+    width: 130px;
+  }
+
+  .course-box .course-box-item {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 auto;
+
+    margin-bottom: 45px;
+    /* width: 358px; */
+    width: 550px;
+  }
+
+  /*==============================================================
+    　　PC_Care Item
+  ==============================================================*/
+  .item {
+    margin-top: 170px;
+  }
+
+  /* .item .sec-title .title-line {
+    margin: 20px auto 45px;
+  } */
+
+  /* .item .item-box .box-01 .price {
+    font-size: 16px;
+    margin-top: 10px;
+  } */
+
+  .item-img {
+    /* width: 300px; */
+    height: 300px;
+  }
+
+  .item .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.4em;
+    /* line-height: 1.5; */
+    /* margin-left: 10px; */
+  }
+
+  .item .sec-title .title-jp span {
+    letter-spacing: 0.1em;
+  }
+
+  /* .item .item-box .box-02 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 8px;
+  }
+
+  .item .item-box .box-02 .box-title {
+    font-size: 16px;
+    margin-bottom: 3px;
+  } */
+
+  .item .item-text {
+    font-size: 16px;
+    line-height: 2.3;
+    padding: 0 0 0 20px;
+  }
 
   /*==============================================================
     　　PC_FAQ

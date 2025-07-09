@@ -357,7 +357,7 @@
     　　MENU
   ==============================================================*/
   .sec-menu {
-    background-image: url(../img/menu.png);
+    background-image: url(../img/menu.webp);
     margin: 0 27px;
     height: 172px;
     background-size: cover;
@@ -664,6 +664,11 @@
   .sec-bg .title-line {
     width: 20px;
     margin: 23px auto;
+  }
+
+  .sec-menu .sec-title .title-jp {
+    font-size: 13px;
+    letter-spacing: 0.38em;
   }
 
   .sec-system .sec-title .title-jp {

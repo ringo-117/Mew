@@ -4,7 +4,8 @@
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
 
-  .sp-none {
+  .sp-none,
+  .tb-only {
     display: none;
   }
   /*==============================================================
@@ -49,53 +50,6 @@
     object-fit: cover;
     object-position: 50% 53%;
   }
-
-
-  /*==============================================================
-    　　準備中
-  ==============================================================*/
-  /* .main-bg {
-    background-color: #EEEDED;
-    padding: 0 16px;
-    height: 100svh;
-    position: relative;
-  }
-
-  .coming-soon-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    width: 343px;
-    padding: 72px 24px 72px;
-    text-align: center;
-    letter-spacing: 0.1em;
-  }
-
-  .icon-clock {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 32px;
-  }
-
-  .coming-soon-box h1 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    letter-spacing: 0.15em;
-  }
-
-  .coming-soon-box p {
-    font-size: 13px;
-    line-height: 1.8;
-    font-weight: 500;
-    margin-left: 5px;
-  }
-
-  .maintenance .sec-line {
-    margin-top: 40px;
-  } */
 
   /*==============================================================
   　　COURSE
@@ -153,8 +107,6 @@
     text-align: center;
     margin-top: 48px;
   }
-
-  
 
   .course-box .course-num {
     width: 80px;
@@ -231,33 +183,17 @@
     font-size: 11px;
     letter-spacing: 0em;
     line-height: 2.8;
-    /* margin-left: 10px; */
   }
 
   .item .sec-title .title-jp span {
     letter-spacing: 0.1em;
   }
 
-  /* .item .item-box .box-02 {
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    margin-left: 8px;
-  }
-
-  .item .item-box .box-02 .box-title {
-    font-weight: 900;
-    margin-bottom: 3px;
-    letter-spacing: 0.1em;
-  } */
-
   .item .item-text {
     font-size: 11px;
     letter-spacing: 0;
     font-weight: 600;
     line-height: 2.3;
-    /* padding: 0 0 0 20px; */
     width: 310px;
     margin: 0 auto;
     color: #868686;
@@ -334,7 +270,8 @@
 @media screen and (min-width: 640px) {
   /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
 
-  .sp-none {
+  .sp-none,
+  .tb-only {
     display: block;
   }
 
@@ -369,41 +306,84 @@
   }
 
   /*==============================================================
-    　　TB_準備中画面
+  　　TB_COURSE
   ==============================================================*/
-  /* .coming-soon-box {
-    width: 663px;
-    padding: 80px 24px 80px;
-    margin-top: 16px;
+  .content .sec-title .title-line {
+    width: 22px;
+    margin: 30px auto 45px;
   }
 
-  .icon-clock {
-    width: 85px;
-    height: 85px;
-    margin-bottom: 28px;
+  .course .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.51em;
+    line-height: 2.5;
+    margin-left: 10px;
   }
 
-  .coming-soon-box h1 {
-    font-size: 22px;
-    margin-bottom: 24px;
-    letter-spacing: 0.18em;
+  .course .sec-title .title-jp span {
+    letter-spacing: 0.43em;
   }
 
-  .coming-soon-box p {
-    font-size: 14px;
-    line-height: 1.8;
-  } */
+  .course-box {
+    font-size: 15px;
+    margin-top: 100px;
+    line-height: 2;
+  }
 
-    /*==============================================================
+  /*==============================================================
+    　　TB_Care Item
+  ==============================================================*/
+  .item {
+    margin-top: 160px;
+  }
+
+  .item .item-box .price {
+    font-size: 15px;
+
+    margin: 25px auto 60px;
+  }
+
+  .item-img {
+    height: 276px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .item-img img {
+    object-position: 50% 42%;
+
+  }
+
+  .item .sec-title .title-jp {
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .item .sec-title .title-jp span {
+    letter-spacing: 0.15em;
+  }
+
+  .item .item-text {
+    font-size: 16px;
+    line-height: 3;
+    padding: 0;
+    width: 710px;
+  }
+
+  .item .item-text span {
+    letter-spacing: 0;
+  }
+
+  /*==============================================================
     　　TB_FAQ
   ==============================================================*/
   .sec-faq {
     margin: 0 27px 30px;
-    height: 335px;
+    height: 226px;
     max-width: 650px;
     margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 100px;
+    margin-top: 165px;
+    margin-bottom: 124px;
   }
 
   .sec-faq .sec-title {
@@ -440,6 +420,10 @@
 @media screen and (min-width: 1024px) {
   /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
 
+  .tb-only {
+    display: none;
+  }
+
   /*==============================================================
     　　PC_MENU
   ==============================================================*/
@@ -469,37 +453,6 @@
   }
 
   /*==============================================================
-  　　PC_準備中画面
-  ==============================================================*/
-  /* .main-bg {
-    height: 90vh;
-  }
-
-  .coming-soon-box {
-    width: 800px;
-    padding: 92px 24px 96px;
-    margin-top: 40px;
-  }
-
-  .icon-clock {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 32px;
-  }
-
-  .coming-soon-box h1 {
-    font-size: 24px;
-    margin-bottom: 24px;
-    letter-spacing: 0.2em;
-  }
-
-  .coming-soon-box p {
-    font-size: 15px;
-    line-height: 2;
-    margin-left: 8px;
-  } */
-
-  /*==============================================================
   　　PC_COURSE
   ==============================================================*/
   .content .sec-title .title-line {
@@ -515,9 +468,7 @@
     margin-left: 10px;
   }
 
-  .course .sec-title .title-jp span {
-    letter-spacing: 0.43em;
-  }
+  
 
   .course-box {
     line-height: 1.5;
@@ -533,7 +484,6 @@
     font-size: 15px;
     margin-top: 100px;
     line-height: 2;
-
   }
 
   .course-box .course-num {
@@ -596,19 +546,6 @@
     letter-spacing: 0.15em;
   }
 
-  /* .item .item-box .box-02 {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    margin-left: 8px;
-  }
-
-  .item .item-box .box-02 .box-title {
-    font-size: 16px;
-    margin-bottom: 3px;
-  } */
-
   .item .item-text {
     font-size: 16px;
     line-height: 3;
@@ -616,9 +553,6 @@
     width: 884px;
   }
 
-  .item .item-text span {
-    letter-spacing: 0;
-  }
 
   /*==============================================================
     　　PC_FAQ

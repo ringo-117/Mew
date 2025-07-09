@@ -218,8 +218,8 @@ html {
   ==============================================================*/
   .sec-line {
     background-image: url(../img/line-bg.png);
-    margin: 0 27px;
-    height: 172px;
+    /* margin: 0 27px; */
+    height: 174px;
     background-size: cover;
     background-position: 50% 50%;
     text-align: center;
@@ -258,7 +258,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 23px;
+    /* margin: 20px 23px; */
+    margin: 27px 23px;
   }
 
   .copy {

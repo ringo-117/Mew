@@ -223,10 +223,6 @@
     position: relative;
   }
 
-  .sec-faq:hover .bg-img {
-    transform: scale(1.1);
-  }
-
   .sec-faq .sec-title {
     text-align: center;
     margin: 0;
@@ -614,3 +610,14 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  /* パソコン用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　ホバーアニメーション
+  ==============================================================*/
+  /* ==================== FAQ ================== */
+  .sec-faq:hover .bg-img {
+    transform: scale(1.1);
+  }
+
+}

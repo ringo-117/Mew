@@ -233,10 +233,6 @@
     transition: transform .6s ease;
   }
 
-  .movie .movie-img:hover img {
-    transform: scale(1.1);
-  }
-
   .movie .movie-icon img{
     width: 50px;
     position: absolute;
@@ -315,16 +311,6 @@
     position: relative;
   }
 
-  /* .sec-system:hover {
-    background-size: 112%;
-  } */
-
-  
-
-  .sec-system:hover .bg-img {
-    transform: scale(1.1);
-  }
-
   .sec-system .sec-title {
     color: #fff;
     margin-top: -4px;
@@ -386,9 +372,6 @@
     margin-top: -4px;
   }
 
-  .sec-menu:hover .bg-img {
-    transform: scale(1.1);
-  }
 
 
   /*==============================================================
@@ -970,8 +953,8 @@
 
 }
 
-@media screen and (min-width: 1450px) {
-  /* パソコン用レイアウト 1450px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (min-width: 1400px) {
+  /* パソコン用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
 
   #movie {
     scroll-margin-top: 300px;
@@ -981,5 +964,23 @@
   ==============================================================*/
   .top-img img {
     object-position: 50% 60%;
+  }
+
+  /*==============================================================
+    　　ホバーアニメーション
+  ==============================================================*/
+  /* ==================== MOVIE ================== */
+  .movie .movie-img:hover img {
+    transform: scale(1.1);
+  }
+
+  /* ==================== SYSTEM ================== */
+  .sec-system:hover .bg-img {
+    transform: scale(1.1);
+  }
+
+  /* ==================== MENU ================== */
+  .sec-menu:hover .bg-img {
+    transform: scale(1.1);
   }
 }

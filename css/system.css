@@ -6,7 +6,6 @@
 
   .wrap-tb,
   .wrap-pc,
-  .tb-img,
   .tb-only,
   .pc-only {
     display: none;
@@ -163,10 +162,6 @@
     margin-top: 30px;
   }
 
-  /* .flow-03 .flow-img {
-    margin-top: 27px;
-  } */
-
   .flow-img img {
     width: 100%;
     height: 100%;
@@ -285,13 +280,11 @@
   /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
 
   .wrap-sp,
-  .sp-img,
   .tb-none {
     display: none;
   }
 
   .wrap-tb,
-  .tb-img,
   .tb-only {
     display: block;
   }

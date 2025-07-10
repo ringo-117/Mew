@@ -107,19 +107,19 @@
 
     <main id="top">
       <section class="sec-top">
-        <figure class="top-img">
+        <figure class="top-img fade-up">
           <img src="img/hero.webp" alt="ヒーロー">
         </figure>
         <article class="title-box">
-          <h1>Mew</h1>
-          <p class="sub-title">hair growth salon</p>
-          <p class="title-text">
+          <h1 class="fade-up">Mew</h1>
+          <p class="sub-title fade-up">hair growth salon</p>
+          <p class="title-text fade-up delay-1">
             Where gentle care meets innovation.<br>
             A new hair growth experience.<br>
             From Korea.
           </p>
         </article>
-        <div class="to-about-all">
+        <div class="to-about-all fade-up">
           <div class="to-about-box">
             <a href="#movie">
               <img class="svg" src="img/icon-btm.svg" alt="下矢印アイコン">
@@ -133,50 +133,54 @@
         </div>
       </section>
 
-      <section id="movie" class="sec-movie">
-        <div class="movie">
-          <article id="modal-open-movie" class="modal-open-movie">
-            <div>
-              <figure class="movie-img">
-                <img src="img/movie.webp" alt="Mewイメージ">
-              </figure>
-              <figure class="movie-icon">
-                <img class="movie-icon1" src="img/icon-movie.svg" alt="動画再生アイコン">
-              </figure>
+      <div class="offs">
+        <section id="movie" class="sec-movie effect">
+          <div class="movie">
+            <article id="modal-open-movie" class="modal-open-movie">
+              <div>
+                <figure class="movie-img">
+                  <img src="img/movie.webp" alt="Mewイメージ">
+                </figure>
+                <figure class="movie-icon">
+                  <img class="movie-icon1" src="img/icon-movie.svg" alt="動画再生アイコン">
+                </figure>
+              </div>
+            </article>
+            <div class="modal-movie">
+              <span>&times;</span>
+              <iframe width="1920px" height="1080px" src="https://www.youtube.com/embed/ge3gT9G2m2A?si=AYzdSQ2_BOlLQcU4&autoplay=1&mute=1&rel=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="movie-bg"></div>
             </div>
-          </article>
-          <div class="modal-movie">
-            <span>&times;</span>
-            <iframe width="1920px" height="1080px" src="https://www.youtube.com/embed/ge3gT9G2m2A?si=AYzdSQ2_BOlLQcU4&autoplay=1&mute=1&rel=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="movie-bg"></div>
           </div>
-        </div>
-        <p class="movie-p">※ 設定から高画質(4Kなど)を選択してのご視聴をおすすめします。</p>
-      </section>
+          <p class="movie-p">※ 設定から高画質(4Kなど)を選択してのご視聴をおすすめします。</p>
+        </section>
+      </div>
 
-      <section id="about" class="sec-about">
-        <article class="sec-title">
+      <section id="about" class="sec-about offs">
+        <article class="sec-title effect delay-1">
           <h2 class="title">ABOUT</h2>
           <div class="title-line"></div>
           <p class="title-jp">私たちの想い</p>
         </article>
-        <p class="text-title">“ひとりで抱え込まずに、そっと話せる場所を目指して”</p>
-        <p class="text">
-          育毛サロンMewは、薄毛や抜け毛に悩む方が<br>
-          安心して相談できる場所として、福岡市西区に生まれました。<br>
-          大切にしているのは、「気持ちに寄り添うこと」。<br>
-          ただ施術をするのではなく、その人の“これから”に向き合うこと。<br>
-          一人でも多くの方が、自信を持って前を向けるように。<br>
-          私たちは、髪と心の両方に優しい時間を提供します。
-        </p>
-        <article class="more-box">
-          <a href="about.html">
-            <p class="more">READ MORE</p>
-            <img class="arrow" src="img/icon-more.svg" alt="上矢印アイコン">
+        <div class="effect delay-2">
+          <p class="text-title">“ひとりで抱え込まずに、そっと話せる場所を目指して”</p>
+          <p class="text">
+            育毛サロンMewは、薄毛や抜け毛に悩む方が<br>
+            安心して相談できる場所として、福岡市西区に生まれました。<br>
+            大切にしているのは、「気持ちに寄り添うこと」。<br>
+            ただ施術をするのではなく、その人の“これから”に向き合うこと。<br>
+            一人でも多くの方が、自信を持って前を向けるように。<br>
+            私たちは、髪と心の両方に優しい時間を提供します。
+          </p>
+          <article class="more-box">
+            <a href="about.html">
+              <p class="more">READ MORE</p>
+              <img class="arrow" src="img/icon-more.svg" alt="上矢印アイコン">
 
-            <!-- <span class="arrow"></span> -->
-          </a>
-        </article>
+              <!-- <span class="arrow"></span> -->
+            </a>
+          </article>
+        </div>
       </section>
 
       <!-- <section class="sec-movie">
@@ -201,34 +205,33 @@
       </section> -->
 
       <div class="flex">
-        <section class="sec-system">
+        <section class="sec-system offs">
           <a href="system.html">
             <div class="sec-bg">
-              <img class="bg-img" src="img/system.webp" alt="施術イメージ">
-              <article class="sec-title">
+              <img class="bg-img zoom-img" src="img/system.webp" alt="施術イメージ">
+              <article class="sec-title effect delay-1">
                 <h2 class="title">SYSTEM</h2>
                 <div class="title-line"></div>
                 <p class="title-jp">施術の流れをご紹介</p>
               </article>
-              <article class="more-box">
+              <article class="more-box effect delay-1">
                 <!-- <span class="arrow"></span> -->
                 <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
-
               </article>
             </div>
           </a>
         </section>
 
-        <section class="sec-menu">
+        <section class="sec-menu offs">
           <a href="menu.html">
             <div class="sec-bg">
-              <img class="bg-img" src="img/menu.webp" alt="MENUイメージ">
-              <article class="sec-title">
+              <img class="bg-img zoom-img zoom-delay" src="img/menu.webp" alt="MENUイメージ">
+              <article class="sec-title effect delay-2">
                 <h2 class="title">MENU</h2>
                 <div class="title-line"></div>
                 <p class="title-jp">オススメのメニューをご紹介</p>
               </article>
-              <article class="more-box">
+              <article class="more-box effect delay-2">
                 <!-- <span class="arrow"></span> -->
                 <img class="arrow" src="img/icon-more-white.svg" alt="上矢印アイコン">
 
@@ -238,13 +241,13 @@
         </section>
       </div>
 
-      <section class="sec-photo">
-        <article class="sec-title">
+      <section class="sec-photo offs">
+        <article class="sec-title effect delay-1">
           <h2 class="title">Before & After</h2>
           <div class="title-line"></div>
         </article>
         <!-- スライダーのコンテナ -->
-        <div class="swiper">
+        <div class="swiper effect delay-2">
           <!-- 必要に応じたwrapper -->
           <div class="swiper-wrapper">
             <!-- スライド -->
@@ -264,12 +267,12 @@
         </div>
       </section>
 
-      <section class="sec-shop">
-        <article class="sec-title">
+      <section class="sec-shop offs">
+        <article class="sec-title effect delay-1">
           <h2 class="title">SHOP</h2>
           <div class="title-line"></div>
         </article>
-        <article class="info">
+        <article class="info effect delay-2">
           <dl class="info_box box_01">
             <dt>店舗名</dt>
             <dd>Mew（ミュウ）</dd>
@@ -337,6 +340,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slider.js?v=1.2"></script>
     <script src="js/movie.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=1.0"></script>
   </body>
 </html>

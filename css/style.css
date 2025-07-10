@@ -33,6 +33,141 @@ html {
     display: none;
   }
 
+  /*==============================================================
+    　　アニメーション
+  ==============================================================*/
+  /* ==================== ロード時（トップ）================== */
+  /* 最初は非表示で下にずらす */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+  }
+
+  /* アニメーション本体 */
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 遅延アニメーション用 */
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+
+  /* ==================== フェードアップ（ページ内）================== */
+  /* アニメーション前の状態 */
+  .effect {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+  }
+
+  /* 表示されたらこのクラスが付く */
+  .effect.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* 遅延用クラス */
+  .delay-1 {
+    transition-delay: 0.3s;
+  }
+  .delay-2 {
+    transition-delay: 0.6s;
+  }
+  .delay-3 {
+    transition-delay: 0.9s;
+  }
+
+  /* ==================== 別ページ_リンク画像 ================== */
+  /* 初期状態：拡大しておく */
+  .zoom-img {
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out, opacity 1s ease;
+    opacity: 0;
+  }
+
+  /* 表示されたら通常サイズに */
+  .zoom-img.show {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* ==================== フェード右から（ページ内）================== */
+  /* 初期状態：右にずらし、透明に */
+  .fade-right {
+    opacity: 0;
+    transform: translateX(50px); /* 右にずらす */
+    transition: all 1s ease-out;
+  }
+
+  /* 表示されたら：位置戻し＋透明→表示 */
+  .fade-right.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* 遅延用クラス */
+  .fade-right .delay-1 {
+    transition-delay: 3s;
+  }
+
+
+
+  /*ふわっと下から表示*/
+  /* .offs .effect {
+    opacity: 0;
+    transform: translate(0, 30px);
+    -webkit-transform: translate(0, 30px);
+  }
+  .ons .effect {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  /*以下、遅延の設定*/
+  /* .ons .delay-1 {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .ons .delay-2 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  } */
+
+  /*ふわっとその場で表示*/
+  /* .sec_items.offs .effect {
+    opacity: 0;
+  }
+  .sec_items.ons .effect {
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  /*以下、遅延の設定*/
+  /* .sec_items.ons .delay-1 {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .sec_items.ons .delay-2 {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .sec_items.ons .delay-3 {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+  .sec_items.ons .delay-4 {
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+  } */
 
   /*==============================================================
     　　ヘッダー

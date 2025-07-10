@@ -64,7 +64,7 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 30,
     },
     // 1450px以上（PC）
-    1450: {
+    1400: {
       slidesPerView: 1.8,
       spaceBetween: 30,
     }

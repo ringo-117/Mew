@@ -445,9 +445,12 @@ html {
   /*==============================================================
     　　PC_ヘッダー
   ==============================================================*/
+  .header .nav_item {
+    transition: opacity 0.3s;
+  }
+
   .header .nav_item:hover {
     opacity: 0.6;
-    transition: 0.3s;
   }
 
   .logo-box img {
@@ -515,6 +518,14 @@ html {
     width: 42px;
     height: 42px;
     margin-top: 90px;
+  }
+
+  .to-top-box img {
+    transition: opacity 0.3s;
+  }
+
+  .to-top-box img:hover {
+    opacity: 0.6;
   }
 
   .copy {

@@ -208,15 +208,23 @@
   /*==============================================================
     　　FAQ
   ==============================================================*/
-  .sec-faq {
+  /* .sec-faq {
     background-image: url(../img/faq.webp);
-    /* margin: 0 27px 30px; */
     margin: 110px 27px 60px;
     height: 172px;
     background-size: 102%;
     background-position: 25% 50%;
+  } */
 
-    /* margin-top: 80px; */
+  .sec-faq {
+    margin: 110px 27px 60px;
+    height: 172px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sec-faq:hover .bg-img {
+    transform: scale(1.1);
   }
 
   .sec-faq .sec-title {
@@ -262,6 +270,17 @@
     position: absolute;
     right: 13px;
     bottom: 13px;
+  }
+
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    z-index: -1;
   }
 
 }

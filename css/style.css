@@ -117,57 +117,54 @@ html {
     transition-delay: 0.7s;
   }
 
+  /*==============================================================
+    　　LINE
+  ==============================================================*/
+  .line-box {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, 100%);
+    color: #fff;
+    font-weight: bold;
+    z-index: 20;
 
-
-  /*ふわっと下から表示*/
-  /* .offs .effect {
+    /* display: none; */
     opacity: 0;
-    transform: translate(0, 30px);
-    -webkit-transform: translate(0, 30px);
+    /* transform: translateY(100%); */
+    transition: all 0.5s ease;
   }
-  .ons .effect {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-  /*以下、遅延の設定*/
-  /* .ons .delay-1 {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-  .ons .delay-2 {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-  } */
 
-  /*ふわっとその場で表示*/
-  /* .sec_items.offs .effect {
-    opacity: 0;
-  }
-  .sec_items.ons .effect {
+  /* 表示状態（スマホ） */
+  .line-box.show {
+    /* display: block; */
     opacity: 1;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    transform: translate(-50%, 0);
   }
-  /*以下、遅延の設定*/
-  /* .sec_items.ons .delay-1 {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
+
+  .line-box a {
+    background-color: #06c755;
+    display: flex;
+    /* width: 290px; */
+    height: 51px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px 13px 0 0;
+    padding: 2px 24px 0;
+    white-space: nowrap;
   }
-  .sec_items.ons .delay-2 {
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
+
+  .line-box img {
+    width: 48px;
+    height: 48px;
   }
-  .sec_items.ons .delay-3 {
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
+
+  .line-box p {
+    margin: 0 24px 2px 24px;
+    font-size: 17px;
+    letter-spacing: 0.15em;
   }
-  .sec_items.ons .delay-4 {
-    -webkit-transition-delay: 1.5s;
-    transition-delay: 1.5s;
-  } */
 
   /*==============================================================
     　　ヘッダー
@@ -349,9 +346,9 @@ html {
 
 
   /*==============================================================
-    　　LINE
+    　　IMG
   ==============================================================*/
-  .sec-line {
+  .sec-img {
     background-image: url(../img/line-bg.png);
     /* margin: 0 27px; */
     height: 174px;
@@ -360,7 +357,7 @@ html {
     text-align: center;
   }
 
-  .sec-line p {
+  /* .sec-line p {
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -378,9 +375,9 @@ html {
     background-color: #06c755;
     margin: 18px auto;
     border-radius: 10px;
-  }
+  } */
 
-  .sec-line .sec-bg {
+  .sec-img .sec-bg {
     height: 100%;
     align-content: center;
   }
@@ -468,6 +465,60 @@ html {
     display: block;
   }
 
+   /*==============================================================
+    　　TB_LINE
+  ==============================================================*/
+
+  .line-box {
+    top: 58%;
+    left: auto;
+    right: 0;
+    transform: translate(100%, -58%);
+    width: 68px;
+    height: 367.5px;
+  }
+
+  .line-box.show {
+    transform: translate(0, -58%);
+  }
+
+  .line-box a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 68px;
+    height: auto;
+    justify-items: center;
+    border-radius: 13px 0 0 13px;
+    padding: 14px 0 14px;
+    padding-left: 4px;
+
+  }
+
+  .line-box img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .line-box p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-feature-settings: initial;
+    margin: 0 auto;
+
+    font-size: 19px;
+    letter-spacing: 0.3em;
+
+    padding: 8px 0;
+  }
+
+  .line-box p span {
+    letter-spacing: 0.2em;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+
   /*==============================================================
     　　TB_ヘッダー
   ==============================================================*/
@@ -486,20 +537,20 @@ html {
   }
 
   /*==============================================================
-    　　PC_LINE
+    　　TB_IMG
   ==============================================================*/
-  .sec-line {
+  .sec-img {
     margin: 0;
     height: 325px;
   }
 
-  .sec-line .sec-bg {
+  .sec-img .sec-bg {
     height: 100%;
     align-content: center;
     padding: 0 90px;
   }
 
-  .sec-line p {
+  /* .sec-line p {
     font-size: 15px;
     letter-spacing: 0.07em;
   }
@@ -513,7 +564,7 @@ html {
     height: 79px;
     margin: 38px auto;
     border-radius: 16px;
-  }
+  } */
 
   /*==============================================================
     　　TB_フッター
@@ -593,17 +644,17 @@ html {
   }
 
   /*==============================================================
-    　　PC_LINE
+    　　PC_IMG
   ==============================================================*/
-  .sec-line .sec-bg {
+  .sec-img .sec-bg {
     padding: 0 180px;
   }
 
-  .line-box {
+  /* .line-box {
     margin: 43px auto;
     border-radius: 16px;
     max-width: 1142px;
-  }
+  } */
 
   /*==============================================================
     　　PC_フッター

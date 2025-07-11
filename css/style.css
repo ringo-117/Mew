@@ -113,8 +113,8 @@ html {
     transform: translateX(0);
   }
   /* 遅延用クラス */
-  .fade-right .delay-1 {
-    transition-delay: 3s;
+  .fade-right.delay-1 {
+    transition-delay: 0.6s;
   }
 
 

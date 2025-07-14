@@ -12,11 +12,6 @@
     scroll-margin-top: 170px;
   }
 
-  .sp-none {
-    display: none;
-  }
-
-
   /*==============================================================
     　　モーダル
   ==============================================================*/
@@ -53,13 +48,8 @@
   .modal-box .modal-container {
     background: white;
     padding: 20px;
-    /* width: 280px;
-    height: 200px; */
-
     width: 330px;
     height: 220px;
-
-
     z-index: 1;
     border-radius: 10px;
     position: absolute;
@@ -593,15 +583,6 @@
   #movie {
     scroll-margin-top: 280px;
   }
-
-  .sp-none {
-    display: block;
-  }
-
-  .sp-only {
-    display: none;
-  }
-
   /*==============================================================
     　　TB_モーダル
   ==============================================================*/

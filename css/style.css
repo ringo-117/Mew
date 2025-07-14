@@ -124,21 +124,17 @@ html {
     position: fixed;
     bottom: 0;
     left: 50%;
-    /* transform: translateX(-50%); */
     transform: translate(-50%, 100%);
     color: #fff;
     font-weight: bold;
-    z-index: 20;
+    z-index: 5;
 
-    /* display: none; */
     opacity: 0;
-    /* transform: translateY(100%); */
     transition: all 0.5s ease;
   }
 
   /* 表示状態（スマホ） */
   .line-box.show {
-    /* display: block; */
     opacity: 1;
     transform: translate(-50%, 0);
   }
@@ -146,7 +142,6 @@ html {
   .line-box a {
     background-color: #06c755;
     display: flex;
-    /* width: 290px; */
     height: 51px;
     align-items: center;
     justify-content: center;
@@ -492,7 +487,6 @@ html {
     border-radius: 13px 0 0 13px;
     padding: 15px 0 16px;
     padding-left: 4px;
-
   }
 
   .line-box img {

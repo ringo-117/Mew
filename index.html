@@ -2,13 +2,13 @@
 <html lang="ja">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHEC39CH49"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHEC39CH49"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-KHEC39CH49');
-    </script>
+    </script> -->
 
     <!-- 正規ページ設定 -->
     <link rel="canonical" href="https://mew2025.com/">
@@ -40,7 +40,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css?v=3.1">
-    <link rel="stylesheet" href="css/index.css?v=3.6">
+    <link rel="stylesheet" href="css/index.css?v=3.7">
   </head>
 
   <body>
@@ -136,6 +136,17 @@
         </a>
       </article>
 
+      <!-- モーダル -->
+      <div class="modal-box">
+        <article class="modal-container">
+          <span>&times;</span>
+          <div class="modal-item">
+            モーダルの内容が入ります
+          </div>
+        </article>
+        <div class="modal-bg"></div>
+      </div>
+
       <div class="offs">
         <section id="movie" class="sec-movie effect">
           <div class="movie">
@@ -180,7 +191,7 @@
               <p class="more">READ MORE</p>
               <img class="arrow" src="img/icon-more.svg" alt="上矢印アイコン">
 
-              <!-- <span class="arrow"></span> -->
+              <div class="modal-trigger-target"></div>
             </a>
           </article>
         </div>
@@ -324,6 +335,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slider.js?v=1.2"></script>
+    <script src="js/modal.js"></script>
     <script src="js/movie.js?v=1.0"></script>
     <script src="js/main.js?v=1.4"></script>
   </body>

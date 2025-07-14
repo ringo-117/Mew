@@ -464,7 +464,7 @@ html {
     　　TB_LINE
   ==============================================================*/
 
-  .line-box {
+  /* .line-box {
     top: 58%;
     left: auto;
     right: 0;
@@ -511,7 +511,7 @@ html {
     letter-spacing: 0.2em;
     margin-bottom: 4px;
     font-size: 20px;
-  }
+  } */
 
   /*==============================================================
     　　TB_ヘッダー
@@ -621,6 +621,55 @@ html {
   /*==============================================================
     　　共通（パソコン）
   ==============================================================*/
+
+  .line-box {
+    top: 58%;
+    left: auto;
+    right: 0;
+    transform: translate(100%, -58%);
+    width: 68px;
+    height: 330.5px;
+  }
+
+  .line-box.show {
+    transform: translate(0, -58%);
+  }
+
+  .line-box a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 68px;
+    height: auto;
+    justify-items: center;
+    border-radius: 13px 0 0 13px;
+    padding: 15px 0 16px;
+    padding-left: 4px;
+  }
+
+  .line-box img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .line-box p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-feature-settings: initial;
+    margin: 0 auto;
+
+    font-size: 19px;
+    letter-spacing: 0.3em;
+
+    padding: 8px 0;
+  }
+
+  .line-box p span {
+    letter-spacing: 0.2em;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
 
   /*==============================================================
     　　PC_ヘッダー

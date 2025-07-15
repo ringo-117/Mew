@@ -298,17 +298,17 @@ html {
   }
 
   .sns-icon {
-    /* width: 28px;
-    height: 28px; */
-
     width: 29px;
     height: 29px;
   }
 
-  .sns-icon.tiktok {
-    /* width: 27px;
-    height: 27px; */
+  .sns-icon.line {
+    width: 28.5px;
+    height: 28.5px;
+    margin-bottom: 0.3px;
+  }
 
+  .sns-icon.tiktok {
     width: 28px;
     height: 28px;
   }
@@ -344,7 +344,7 @@ html {
     　　IMG
   ==============================================================*/
   .sec-img {
-    background-image: url(../img/line-bg.png);
+    background-image: url(../img/end-bg.webp);
     /* margin: 0 27px; */
     height: 174px;
     background-size: cover;

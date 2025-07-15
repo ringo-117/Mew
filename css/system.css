@@ -118,9 +118,9 @@
     letter-spacing: 0.22em;
   }
 
-  /* .flow-03 .flow-title {
-    line-height: 1.6;
-  } */
+  .flow-03 .flow-title {
+    margin-left: 2px;
+  }
 
   .flow-text {
     font-size: 11px;
@@ -136,9 +136,6 @@
 
   .flow-text.long {
     line-height: 2.8em;
-    /* letter-spacing: -0.1em; */
-
-    /* 修正版 */
     letter-spacing: 0.01em;
     max-width: 300px;
   }
@@ -367,9 +364,12 @@
     width: 740px;
   }
 
-  .flow-01,
-  .flow-03 {
+  .flow-01 {
     margin-left: 390px;
+  }
+
+  .flow-03 {
+    margin-left: 393px;
   }
 
   .flow-02 {
@@ -380,6 +380,10 @@
   .flow-num {
     font-size: 48px;
     margin-bottom: 10px;
+  }
+
+  .flow-03 .flow-num {
+    margin-left: -3px;
   }
 
   .flow-title {
@@ -648,7 +652,8 @@
   .flow-02 .flow-text.long {
     margin-bottom: 0;
     max-width: 400px;
-    margin-right: -18px;
+    margin-right: 0;
+    margin-left: 6px;
   }
 
   .flow-03 .flow-text.long {

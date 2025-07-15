@@ -210,7 +210,8 @@
   } */
 
   .sec-menu {
-    margin: 0 27px 30px;
+    /* margin: 0 27px 30px; */
+    margin: 0 27px 42px;
     height: 172px;
     overflow: hidden;
     position: relative;

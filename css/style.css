@@ -346,7 +346,8 @@ html {
   .sec-img {
     background-image: url(../img/end-bg.webp);
     /* margin: 0 27px; */
-    height: 174px;
+    /* height: 174px; */
+    height: 160px;
     background-size: cover;
     background-position: 50% 50%;
     text-align: center;
@@ -535,7 +536,8 @@ html {
   ==============================================================*/
   .sec-img {
     margin: 0;
-    height: 325px;
+    /* height: 325px; */
+    height: 250px;
   }
 
   .sec-img .sec-bg {
@@ -640,6 +642,11 @@ html {
   /*==============================================================
     　　PC_IMG
   ==============================================================*/
+
+  .sec-img {
+    height: 320px;
+  }
+
   .sec-img .sec-bg {
     padding: 0 180px;
   }

@@ -86,7 +86,8 @@
   .faq-main {
     position: relative;
     font-optical-sizing: auto;
-    margin: 0 24px 45px;
+    /* margin: 0 24px 45px; */
+    margin: 0 24px 70px;
   }
 
   .faq-box {

@@ -224,7 +224,7 @@
   }
 
   .coupon-link p {
-    margin: 10px 0 11.5px;
+    padding: 10px 0 11.5px;
     letter-spacing: 0.05em;
   }
 
@@ -830,7 +830,7 @@
   }
 
   .coupon-link p {
-    margin: 12px 0 13.5px;
+    padding: 12px 0 13.5px;
     letter-spacing: 0.05em;
   }
 
@@ -840,6 +840,14 @@
     left: 215px;
     width: 115px;
     height: 1.3px;
+  }
+
+  .coupon-link p::after {
+    width: 13px;
+    height: 13px;
+    top: 48%;
+    right: 10px;
+    transform: translateY(-48%);
   }
 
   /*==============================================================
@@ -1300,6 +1308,10 @@
   ==============================================================*/
   .top-img img {
     object-position: 50% 60%;
+  }
+  /* ==================== モーダル ================== */
+  .coupon-link:hover {
+    opacity: 0.6;
   }
 
   /*==============================================================

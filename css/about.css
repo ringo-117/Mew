@@ -159,14 +159,6 @@
   /*==============================================================
     　　SYSTEM
   ==============================================================*/
-  /* .sec-system {
-    background-image: url(../img/system.webp);
-    margin: 0 27px 30px;
-    height: 172px;
-    background-size: 102%;
-    background-position: 50% 50%;
-  } */
-
   .sec-system {
     /* margin: 0 27px 30px; */
     margin: 0 27px 42px;
@@ -280,14 +272,10 @@
   }
 
   .about-top-text .text-title {
-    /* font-size: 15px; */
     line-height: 2.8;
-    /* margin-top: 80px; */
     margin-bottom: 18px;
     letter-spacing: 0.03em;
     margin-left: 0;
-
-    /* 修正版 */
     font-size: 20px;
     line-height: 3;
     margin-top: 83px;
@@ -430,9 +418,6 @@
   }
 
   .about-top-text .text-title {
-    /* margin-top: 83px; */
-
-    /* 修正版 */
     margin-top: 115px;
   }
 

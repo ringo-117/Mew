@@ -66,23 +66,6 @@
   }
 
   /* ==================== 曲線 ================== */
-  /* .wrap {
-    overflow: hidden;
-    height: 50px;
-  }
-
-  .system-line {
-    border-top: solid 1px #212121;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    height: 365px;
-    margin-left: -100px;
-    margin-right: -100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    opacity: 0.7;
-  } */
-
   .wrap-line-all {
     width: 100vw;
     overflow: hidden;
@@ -201,16 +184,7 @@
   /*==============================================================
     　　MENU
   ==============================================================*/
-  /* .sec-menu {
-    background-image: url(../img/menu.webp);
-    margin: 0 27px 30px;
-    height: 172px;
-    background-size: cover;
-    background-position: 50% 50%;
-  } */
-
   .sec-menu {
-    /* margin: 0 27px 30px; */
     margin: 0 27px 42px;
     height: 172px;
     overflow: hidden;
@@ -349,19 +323,13 @@
   ==============================================================*/
   .flow{
     position: relative;
-    /* width: 770px; */
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 20px;
-
-    /* 修正 */
     width: 740px;
   }
 
   .flow-box {
-    /* width: 770px; */
-
-    /* 修正 */
     width: 740px;
   }
 
@@ -391,11 +359,6 @@
     font-size: 16px;
   }
 
-  /* .flow-03 .flow-title {
-    line-height: 2.3;
-    margin-top: -6px;
-  } */
-
   .flow-text {
     font-size: 16px;
     letter-spacing: 0.09em;
@@ -403,20 +366,16 @@
   }
 
   .flow-01 .item-end {
-    /* margin-top: 35px; */
     letter-spacing: 0.01em;
     margin-bottom: 70px;
-
     line-height: 2.5;
     margin-top: 0.8em;
   }
 
   .flow-text.long {
     line-height: 2.5em;
-    /* letter-spacing: -0.1em; */
     letter-spacing: 0.01em;
     text-align: left;
-    /* min-width: 330px; */
     margin-top: 18px;
     max-width: none;
   }
@@ -442,10 +401,6 @@
     margin-left: auto;
   }
 
-  /* .flow-03 .flow-img {
-    margin-top: 30px;
-  } */
-
   /* ==================== 縦線と丸 ================== */
   .flow-line-box {
     position: absolute;
@@ -460,11 +415,7 @@
   }
 
   .flow-circle-all img:nth-of-type(2) {
-    margin-top: 228px;
-
-    /* 修正 */
     margin-top: 272px;
-
   }
 
   .flow-circle-all img:nth-of-type(3) {
@@ -472,7 +423,6 @@
   }
 
   .flow-line {
-    /* height: 920px; */
     height: 970px;
     left: 14px;
   }
@@ -516,8 +466,6 @@
     right: 30px;
     bottom: 22px;
   }
-
-
 
 }
 
@@ -579,18 +527,6 @@
     letter-spacing: 0.14em;
   }
 
-  /* ==================== 曲線 ================== */
-  /* .wrap-line-all {
-    width: 100vw;
-    overflow: hidden;
-
-  }
-  .wrap-line {
-    max-width: 106vw;
-    margin-left: -3vw;
-  } */
-
-
   /*==============================================================
     　　PC_flow
   ==============================================================*/
@@ -612,7 +548,6 @@
   }
 
   .flow-02 {
-    /* max-width: 393px; */
     max-width: 400px;
   }
 
@@ -638,10 +573,8 @@
   }
 
   .flow-01 .item-end {
-    /* margin-top: 45px; */
     margin-bottom: 30px;
     line-height: 1.15;
-
     margin-top: 1.5em;
   }
 

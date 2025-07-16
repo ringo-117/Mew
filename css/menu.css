@@ -13,7 +13,6 @@
   ==============================================================*/
   .menu {
     margin: 80px 0 70px;
-    /* margin: 80px 0 45px; */
   }
   .sec-title {
     font-weight: 600;
@@ -70,7 +69,6 @@
     width: 14px;
     height: 1px;
     background-color: #212121;
-    /* margin: 12px auto 38px; */
     margin: 12px auto 30px;
   }
 
@@ -78,7 +76,6 @@
     font-size: 11px;
     letter-spacing: 0.24em;
     line-height: 2.8;
-    /* margin-left: 10px; */
     margin-left: 12px;
   }
 
@@ -107,7 +104,6 @@
     line-height: 1.5;
     text-align: center;
     margin-top: 48px;
-    /* margin-left: 4px; */
     margin-left: 7px;
   }
 
@@ -117,11 +113,6 @@
   }
 
   .course-box .course-box-item {
-    /* display: flex;
-    margin: 0 auto;
-    margin-bottom: 45px;
-    width: 340px; */
-
     margin-bottom: 30px;
   }
 
@@ -137,43 +128,23 @@
     letter-spacing: 0.1em;
   }
 
-  /* .item .sec-title .title-line {
-    margin: 12px auto 40px;
-  } */
-
   .item .item-box {
-    /* display: flex;
-    align-items: end;
-    margin: 16px auto 25px;
-    padding: 0 0 0 20px; */
     margin: 0 20px;
   }
 
   .item .item-box .price {
     text-align: right;
-    /* margin: 20px 0 28px; */
-
     font-size: 11px;
     letter-spacing: 0.24em;
     font-weight: 600;
     margin: 20px 0 50px;
   }
 
-  /* .item .item-box .box-01 .price {
-    text-align: center;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.24em;
-    margin-top: 10px;
-  } */
-
   .item-img {
     width: 100%;
     height: 172px;
     overflow: hidden;
-
     margin-top: 40px;
-    /* margin-top: 60px; */
   }
 
   .item-img img {
@@ -211,16 +182,7 @@
   /*==============================================================
     　　FAQ
   ==============================================================*/
-  /* .sec-faq {
-    background-image: url(../img/faq.webp);
-    margin: 110px 27px 60px;
-    height: 172px;
-    background-size: 102%;
-    background-position: 25% 50%;
-  } */
-
   .sec-faq {
-    /* margin: 110px 27px 60px; */
     margin: 100px 27px 42px;
     height: 172px;
     overflow: hidden;
@@ -413,7 +375,6 @@
     max-width: 650px;
     margin: 0 auto;
     margin-top: 165px;
-    /* margin-bottom: 124px; */
     margin-bottom: 82px;
   }
 
@@ -459,7 +420,6 @@
     　　PC_MENU
   ==============================================================*/
   .menu {
-    /* margin: 180px 0 85px; */
     margin: 180px 0 90px;
   }
 
@@ -489,7 +449,6 @@
   .content .sec-title .title-line {
     width: 20px;
     margin: 20px auto 45px;
-
   }
 
   .course .sec-title .title-jp {
@@ -524,15 +483,6 @@
     margin-top: 170px;
   }
 
-  /* .item .sec-title .title-line {
-    margin: 20px auto 45px;
-  } */
-
-  /* .item .item-box .box-01 .price {
-    font-size: 16px;
-    margin-top: 10px;
-  } */
-
   .item .item-box .price {
     font-size: 16px;
 
@@ -554,8 +504,6 @@
   .item .sec-title .title-jp {
     font-size: 15px;
     letter-spacing: 0.12em;
-    /* line-height: 1.5; */
-    /* margin-left: 10px; */
   }
 
   .item .sec-title .title-jp span {
@@ -575,10 +523,8 @@
   ==============================================================*/
   .sec-faq {
     height: 220px;
-    /* max-width: 845px; */
     max-width: 884px;
     margin: 0 auto;
-    /* margin-top: 120px; */
     margin-top: 190px;
     margin-bottom: 120px;
   }

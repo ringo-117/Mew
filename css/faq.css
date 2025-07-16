@@ -112,10 +112,6 @@
     transition: opacity 0.3s;
   }
 
-  /* .faq-toggle:checked + .faq-title:hover {
-    opacity: 1;
-  } */
-
   .faq-box .title-text {
     letter-spacing: 0.15em;
     line-height: 1.8;
@@ -134,10 +130,6 @@
     display: flex;
     position: relative;
   }
-
-  /* .text-Q:hover {
-    opacity: 0.6;
-  } */
 
   .faq-box p span {
     margin-bottom: 10px;
@@ -159,7 +151,6 @@
 
   .faq-content .faq-A {
     display: flex;
-    /* padding: 0 5px 24px 12px; */
     padding: 0 5px 32px 12px;
   }
 

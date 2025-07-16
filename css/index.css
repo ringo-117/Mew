@@ -53,29 +53,22 @@
     color: #333;
   }
 
-  /* .modal-box .modal-close {
+  /* .modal-box span {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: -10px;
+    right: -10px;
     cursor: pointer;
-    font-size: 25px;
-    border: solid 1px #C3B6D5;
-    border-radius: 50%;
+    font-size: 20px;
+    color: #bba9d4;
     background-color: #FEFAEF;
-    width: 30px;
-    height: 30px;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
     text-align: center;
-    align-content: center;
-    padding-top: -13px;
-    justify-content: center;
-  }
-
-  .modal-box span {
-    cursor: pointer;
-    font-size: 25px;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
+    font-weight: bold;
+    border: solid 1.3px #bba9d4;
+    padding-left: 0.5px;
+    padding-top: -10px;
   } */
 
   .modal-box span {
@@ -85,7 +78,7 @@
     cursor: pointer;
     font-size: 20px;
     color: #bba9d4;
-    background-color: #FEFAEF;
+    background-color: #fff;
     border-radius: 50%;
     height: 27px;
     width: 27px;

@@ -231,7 +231,7 @@
   .coupon-link p::after {
     content: "";
     position: absolute;
-    background-image: url(../img/coupon-arrow.png);
+    background-image: url(../img/coupon-arrow.webp);
     background-size: contain;
     background-repeat: no-repeat;
     width: 12px;

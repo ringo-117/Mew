@@ -224,7 +224,7 @@
   }
 
   .coupon-link p {
-    margin: 10px 0  11.5px;
+    margin: 10px 0 11.5px;
     letter-spacing: 0.05em;
   }
 
@@ -720,20 +720,127 @@
     　　TB_モーダル
   ==============================================================*/
   .modal-box .modal-container {
-    width: 560px;
-    height: 380px;
+    width: 600px;
+    height: 450px;
+    padding: 34px 20px 30px;
   }
 
   .modal-box span {
     font-size: 24px;
+    height: 31px;
+    width: 31px;
   }
 
   .modal-box .modal-container .modal-item {
-    text-align: center;
-    margin-bottom: 8px;
     font-size: 20px;
   }
 
+  /* ========== リボン ========= */
+  .ribbon {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+
+  }
+  .ribbon::before {
+    border-width: 15px 0px 15px 7px;
+  }
+  .ribbon::after {
+    border-width: 15px 7px 15px 0px;
+  }
+
+  .modal-item .title {
+    font-size: 28px;
+    margin: 20px 0 18px;
+    letter-spacing: 0.03em;
+  }
+
+  .modal-arrow {
+    width: 17px;
+    margin-left: 5px;
+  }
+
+  /* ========== 値段 ========= */
+  .price-box.before {
+    margin-left: 18px;
+  }
+
+  .price-box .text {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+
+  .price-box .price {
+    font-size: 26px;
+  }
+
+  .price-box .price-item {
+    margin-bottom: 4px;
+  }
+
+  .price-box .price-item .tax {
+    font-size: 6px;
+    line-height: 0.5;
+    letter-spacing: -0.03em;
+  }
+
+  .price-box .price-item .yen {
+    font-size: 18px;
+  }
+
+  /* ========== 値段　after ========= */
+  .price-box.after {
+    margin-top: -5px;
+  }
+
+  .price-box.after .price-item {
+    margin-bottom: 6px;
+    margin-left: 0;
+  }
+
+  .price-box.after .price {
+    font-size: 56px;
+  }
+
+  .price-box.after .price-item .tax {
+    font-size: 11px;
+    letter-spacing: -0.03em;
+  }
+
+  .price-box.after .price-item .yen {
+    font-size: 34px;
+  }
+
+  .coupon-gift {
+    font-size: 22px;
+    margin: 14px 0;
+  }
+
+  .campaign-deadline {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    margin-bottom: 35px;
+  }
+
+  .coupon-link {
+    font-size: 13px;
+    /* margin: 0 150px; */
+    margin: 0 100px;
+  }
+
+  .coupon-link p {
+    margin: 12px 0 13.5px;
+    letter-spacing: 0.05em;
+  }
+
+
+  .diagonal-line {
+    top: 14px;
+    left: 215px;
+    width: 115px;
+    height: 1.3px;
+  }
 
   /*==============================================================
     　　TB_TOP（ヒーロー）
@@ -981,15 +1088,14 @@
   ==============================================================*/
   .modal-box .modal-container {
     width: 700px;
-    height: 450px;
   }
 
-  .modal-box span {
-    font-size: 26px;
+  .coupon-link {
+    margin: 0 130px;
   }
 
-  .modal-box .modal-container .modal-item {
-    font-size: 20px;
+  .diagonal-line {
+    left: 265px;
   }
   /*==============================================================
     　　PC_TOP（ヒーロー）

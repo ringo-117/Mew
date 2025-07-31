@@ -150,14 +150,28 @@
     padding-left: 25px;
     overflow: hidden;
     margin-top: 47px;
+    position: relative;
   }
 
-  .essence-img img {
+  .essence-img img.bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 38%;
   }
+
+  .essence-img img.text-img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+
 
   /*==============================================================
     　　SYSTEM
@@ -356,8 +370,13 @@
     margin-top: 80px;
   }
 
-  .essence-img img {
+  .essence-img img.bg {
     object-position: 50% 50.3%;
+  }
+
+  .essence-img img.text-img {
+    width: 48%;
+    padding-left: 63px;
   }
 
   /*==============================================================
@@ -469,6 +488,11 @@
     margin-top: 110px;
   }
 
+  .essence-img img.text-img {
+    width: 40%;
+    padding-left: 63px;
+  }
+
   /*==============================================================
     　　PC_SYSTEM
   ==============================================================*/
@@ -495,6 +519,14 @@
 
 @media screen and (min-width: 1400px) {
   /* パソコン用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
+
+  /*==============================================================
+    　　PC_ESSENCE
+  ==============================================================*/
+  .essence-img img.text-img {
+    width: 38%;
+    padding-left: 20px;
+  }
   /*==============================================================
     　　ホバーアニメーション
   ==============================================================*/

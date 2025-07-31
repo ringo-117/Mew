@@ -375,9 +375,15 @@
     object-position: 50% 50.3%;
   }
 
-  .essence-img img.text-img {
+  /* .essence-img img.text-img {
     width: 48%;
     padding-left: 63px;
+  } */
+
+  .essence-img img.text-img {
+    width: 56%;
+    padding-left: 0px;
+    padding-right: 130px;
   }
 
   /*==============================================================
